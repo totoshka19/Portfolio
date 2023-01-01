@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Rubik:wght@400;700&display=swap');
+
+/* --------- start zeroing styles --------- */
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *::before, *::after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav, footer, header, aside{display: block;}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited, a:hover {text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+/* --------- end zeroing styles --------- */
+
+:root {
+    /* ---------------------- font family ---------------------- */
+    --ff-Rubik: 'Rubik', sans-serif;
+    --ff-Raleway: 'Raleway', sans-serif;
+
+    /* ---------------------- color ---------------------- */
+    --color-primary: #616161;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-blue: #4285F4;
+    --color-coral: #EC5863;
+
+    /* ---------------------- backgroun ---------------------- */
+    --bg-coral: #EC5863;
+    --bg-blue: #4285F4;
+    --bg-white: #ffffff;
+    --bg-blue-lt: #FAFBFD;
+}
+
+.btn {
+    font-family: var(--ff-Raleway);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    padding: 16px 30px;
+    color: var(--color-white);
+    border-radius: 5px;
+}
+
+/* ----------- Start header ----------- */
+
+.header {
+    background: var(--bg-blue-lt);
+}
+
+.conteiner {
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 37px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    font-family: var(--ff-Rubik);
+    margin-right: 80px;
+}
+
+.logo span {
+    color: var(--color-coral);
+}
+
+.nav {
+    font-family: var(--ff-Raleway);
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.14em; 
+    text-transform: uppercase;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.nav-link {
+    display: block;
+    color: var(--color-black);
+}
+
+.nav-link:hover {
+    color: var(--color-coral);
+}
+
+.nav-link:active {
+    transform: translateY(1px);
+}
+
+.btn:hover {
+    transform: translateY(1px);
+}
+
+.btn:active {
+    box-shadow: inset 5px 5px 20px rgb(3, 57, 251);
+}
+
+.header-btn {
+    background-color: var(--bg-blue);
+}
+
+/* ----------- End header ----------- */
+
+
