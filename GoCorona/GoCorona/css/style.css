@@ -95,7 +95,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
 /* ----------- Start header ----------- */
 
-.header, .banner{
+.header, .banner, .talk{
     background: var(--bg-blue-lt);
 }
 
@@ -158,6 +158,8 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
 .header-btn {
     background-color: var(--bg-blue);
+    position: relative;
+    z-index: 2;
 }
 
 .header-btn:active {
@@ -172,6 +174,19 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
     display: flex;
     justify-content: space-between;
     padding-top: 90px;
+    position: relative;
+}
+
+.banner-content::before {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 145%;
+    right: 235px;
+    top: -18%;
+    transform: translate(100%, 0px);
+    background-color: var(--bg-coral);
+    border-radius: 30px 0px 0px 30px;
 }
 
 .banner-content {
@@ -194,6 +209,11 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
 .banner-btn:active {
     box-shadow: inset 5px 5px 20px rgb(251, 3, 82);
+}
+
+.banner-img {
+    position: relative;
+    z-index: 2;
 }
 
 .video-wrapper {
@@ -229,19 +249,10 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
     margin-top: 5px;
 }
 
-/* .banner-rectangle {
-    position: absolute;
-    min-width: 295.29px;
-    height: 700px;
-    right: 23%;
-    top: 0px;
-    background: var(--bg-coral);
-    border-radius: 30px 0px 0px 30px;
-} */
-
 /* ----------- End banner ----------- */
 
 /* ----------- Start daily ----------- */
+
 
 .daily {
     display: flex;
@@ -250,9 +261,43 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
     padding-bottom: 79px;
 }
 
+.figure-daily {
+    position: relative;
+}
+
 .daily-img {
     padding-left: 25px;
     padding-right: 149px;
+    position: relative;
+    top: 25px;
+    z-index: 3;
+}
+
+.rec-one {
+    width: 147px;
+    height: 147px;
+    background-color: var(--bg-coral);
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+}
+
+.rec-two, .rec-three {
+    width: 77px;
+    height: 77px;
+    background-color: var(--bg-coral);
+    border-radius: 30px;
+    position: absolute;
+}
+
+.rec-two {
+    bottom: -15px;
+    left: 20px;
+}
+
+.rec-three {
+    bottom: 100px;
+    right: 150px;
 }
 
 .daily-title span {
@@ -265,6 +310,142 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 }
 
 /* ----------- End daily ----------- */
+
+/* ----------- Start talk ----------- */
+
+.statistics {
+    display: block;
+    padding-top: 104px;
+    padding-bottom: 79px;
+    background-image: url(../img/bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.statistics-list {
+    display: flex;
+    width: 654px;
+    justify-content: space-around;
+    background-color: var(--bg-white);
+    padding: 28px 79px 28px 81px;
+    box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+    border-radius: 16px;
+    margin: 0 auto;
+}
+
+.statistics-item {
+    text-transform: uppercase;
+    letter-spacing: 0.37em;
+    font-family: var(--ff-Rubik);
+    color: var(--color-black);
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.statistics-item span {
+    display: block;
+    color: var(--color-coral);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+.talk-cotnent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 116px;
+}
+
+.talk-title span {
+    color: var(--color-blue);
+}
+
+.talk-text {
+    margin: 12px 0 24px 0;
+    width: 363px;
+}
+
+.talk-btn {
+    background-color: var(--bg-coral);
+}
+
+.talk-btn:active {
+    box-shadow: inset 5px 5px 20px rgb(251, 3, 82);
+}
+
+/* ----------- End talk ----------- */
+
+/* ----------- Start healthcare ----------- */
+
+.healthcare-content {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.healthcare-title span {
+    color: var(--color-coral);
+}
+
+.healthcare-content p {
+    margin: 0 auto;
+    width: 600px;
+    padding-top: 14px;
+    padding-bottom: 48px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 35px;
+    background-image: url(../img/bg.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.cards-item {
+    width: 278px;
+    height: 276px;
+    box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+    border-radius: 8px;
+    padding: 36px 23px;
+    text-align: center;
+    background-color: var(--bg-white);
+}
+
+.cards-title {
+    font-family: var(--ff-Rubik);
+    color: var(--color-black);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.08em;
+    padding-top: 58px;
+}
+
+/* ----------- End healthcare ----------- */
+
+/* ----------- Start footer ----------- */
+
+.footer-wrapper {
+   display: flex;
+   justify-content: center;
+} 
+
+.footer__link {
+    margin: 50px 25px;
+}
+
+.app-store {
+    position: relative;
+    top: -5px;
+}
+
+/* ----------- End footer ----------- */
+
+
+
 
 
 
