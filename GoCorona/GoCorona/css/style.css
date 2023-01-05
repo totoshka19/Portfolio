@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Rubik:wght@400;700&display=swap');
+
+/* --------- start zeroing styles --------- */
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *::before, *::after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav, footer, header, aside{display: block;}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited, a:hover {text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+/* --------- end zeroing styles --------- */
+
+:root {
+    /* ---------------------- font family ---------------------- */
+    --ff-Rubik: 'Rubik', sans-serif;
+    --ff-Raleway: 'Raleway', sans-serif;
+
+    /* ---------------------- color ---------------------- */
+    --color-primary: #616161;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-blue: #4285F4;
+    --color-coral: #EC5863;
+
+    /* ---------------------- backgroun ---------------------- */
+    --bg-coral: #EC5863;
+    --bg-blue: #4285F4;
+    --bg-white: #ffffff;
+    --bg-blue-lt: #FAFBFD;
+}
+
+.btn {
+    font-family: var(--ff-Raleway);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    padding: 16px 30px;
+    color: var(--color-white);
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transform: translateY(1px);
+}
+
+.inner-title {
+    font-family: var(--ff-Rubik);
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 126%;
+    color: var(--color-black);
+}
+
+.inner-text {
+    font-family: var(--ff-Rubik);
+    color: var(--color-primary);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+    
+}
+
+/* ----------- Start header ----------- */
+
+.header, .banner, .talk{
+    background: var(--bg-blue-lt);
+}
+
+.container {
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 37px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    font-family: var(--ff-Rubik);
+    margin-right: 80px;
+}
+
+.logo span {
+    color: var(--color-coral);
+}
+
+.nav {
+    font-family: var(--ff-Raleway);
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.14em; 
+    text-transform: uppercase;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.nav-link {
+    display: block;
+    color: var(--color-black);
+}
+
+.nav-link:hover {
+    color: var(--color-coral);
+}
+
+.nav-link:active {
+    transform: translateY(1px);
+}
+
+.header-btn {
+    background-color: var(--bg-blue);
+    position: relative;
+    z-index: 2;
+}
+
+.header-btn:active {
+    box-shadow: inset 5px 5px 20px rgb(3, 57, 251);
+}
+
+/* ----------- End header ----------- */
+
+/* ----------- Start banner ----------- */
+
+.banner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+    position: relative;
+}
+
+.banner-content::before {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 145%;
+    right: 235px;
+    top: -18%;
+    transform: translate(100%, 0px);
+    background-color: var(--bg-coral);
+    border-radius: 30px 0px 0px 30px;
+}
+
+.banner-content {
+    align-self: center;
+}
+
+.banner-title span {
+    color: var(--color-blue);
+}
+
+.banner-text {
+    width: 375px;
+    height: 36px;
+    margin: 12px 0 24px 0;
+}
+
+.banner-btn {
+    background-color: var(--bg-coral);
+}
+
+.banner-btn:active {
+    box-shadow: inset 5px 5px 20px rgb(251, 3, 82);
+}
+
+.banner-img {
+    position: relative;
+    z-index: 2;
+}
+
+.video-wrapper {
+    display: flex;
+    padding-top: 38px;
+    padding-bottom: 48px;
+}
+
+.video-link img{
+    border-radius: 50%;
+}
+
+.video-link img:hover {
+    box-shadow: inset 5px 5px 20px rgb(3, 57, 251);
+}
+
+.video-text {
+    padding-left: 12px;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.08em;
+    color: #B0B0B0;
+    margin-top: 5px;
+}
+
+.video-text span {
+    display: block;
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 0.165em;
+    text-transform: uppercase;
+    color: var(--color-black);
+    margin-top: 5px;
+}
+
+/* ----------- End banner ----------- */
+
+/* ----------- Start daily ----------- */
+
+
+.daily {
+    display: flex;
+    align-items: center;
+    padding-top: 79px;
+    padding-bottom: 79px;
+}
+
+.figure-daily {
+    position: relative;
+}
+
+.daily-img {
+    padding-left: 25px;
+    padding-right: 149px;
+    position: relative;
+    top: 25px;
+    z-index: 3;
+}
+
+.rec-one {
+    width: 147px;
+    height: 147px;
+    background-color: var(--bg-coral);
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+}
+
+.rec-two, .rec-three {
+    width: 77px;
+    height: 77px;
+    background-color: var(--bg-coral);
+    border-radius: 30px;
+    position: absolute;
+}
+
+.rec-two {
+    bottom: -15px;
+    left: 20px;
+}
+
+.rec-three {
+    bottom: 100px;
+    right: 150px;
+}
+
+.daily-title span {
+    color: var(--color-coral);
+}
+
+.daily-text {
+    margin: 12px 0 24px 0;
+    width: 363px;
+}
+
+/* ----------- End daily ----------- */
+
+/* ----------- Start talk ----------- */
+
+.statistics {
+    display: block;
+    padding-top: 104px;
+    padding-bottom: 79px;
+    background-image: url(../img/bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.statistics-list {
+    display: flex;
+    width: 654px;
+    justify-content: space-around;
+    background-color: var(--bg-white);
+    padding: 28px 79px 28px 81px;
+    box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+    border-radius: 16px;
+    margin: 0 auto;
+}
+
+.statistics-item {
+    text-transform: uppercase;
+    letter-spacing: 0.37em;
+    font-family: var(--ff-Rubik);
+    color: var(--color-black);
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.statistics-item span {
+    display: block;
+    color: var(--color-coral);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+.talk-cotnent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 116px;
+}
+
+.talk-title span {
+    color: var(--color-blue);
+}
+
+.talk-text {
+    margin: 12px 0 24px 0;
+    width: 363px;
+}
+
+.talk-btn {
+    background-color: var(--bg-coral);
+}
+
+.talk-btn:active {
+    box-shadow: inset 5px 5px 20px rgb(251, 3, 82);
+}
+
+/* ----------- End talk ----------- */
+
+/* ----------- Start healthcare ----------- */
+
+.healthcare-content {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.healthcare-title span {
+    color: var(--color-coral);
+}
+
+.healthcare-content p {
+    margin: 0 auto;
+    width: 600px;
+    padding-top: 14px;
+    padding-bottom: 48px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 35px;
+    background-image: url(../img/bg.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.cards-item {
+    width: 278px;
+    height: 276px;
+    box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+    border-radius: 8px;
+    padding: 36px 23px;
+    text-align: center;
+    background-color: var(--bg-white);
+}
+
+.cards-title {
+    font-family: var(--ff-Rubik);
+    color: var(--color-black);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.08em;
+    padding-top: 58px;
+}
+
+/* ----------- End healthcare ----------- */
+
+/* ----------- Start footer ----------- */
+
+.footer-wrapper {
+   display: flex;
+   justify-content: center;
+} 
+
+.footer__link {
+    margin: 50px 25px;
+}
+
+.app-store {
+    position: relative;
+    top: -5px;
+}
+
+/* ----------- End footer ----------- */
+
+
+
+
+
+
+
+
