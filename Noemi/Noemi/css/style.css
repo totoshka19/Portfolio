@@ -43,8 +43,6 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
 /* ------------------ Общие стили ------------------ */
 
-
-
 body {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     color: black;
@@ -66,7 +64,13 @@ body {
     font-size: 12px;
 }
 
+.inner-link {
+    color: black;
+}
 
+.inner-link:hover {
+    text-decoration: underline;
+}
 
 /* ------------------- start header ----------------- */
 
@@ -133,8 +137,6 @@ body {
     margin-top: 64px;
 }
 
-
-
 /* ------------------- start content ----------------- */
 
 .content {
@@ -186,10 +188,6 @@ body {
     padding-left: 10px;
 }
 
-.content__block-title-link {
-    color: black;
-}
-
 .content__block-title-link:hover {
     text-decoration: underline;
 }
@@ -209,13 +207,216 @@ body {
 
 /* ------------------- start sidebar ----------------- */
 
+/* ------------------- start sidebar new-posts ----------------- */
+
 .sidebar {
     width: 272px;
 }
 
+.new-posts__title {
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 18px;
+}
+
+.new-posts__title::after {
+    position: relative;
+    content: '';
+    display: block;
+    width: 68px;
+    height: 3px;
+    background: #e1d9bd;
+    bottom: -10px;
+    margin: 0 auto;
+}
+
+.new-posts__block-item {
+    display: flex;
+}
+
+.new-posts__block-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.new-posts__block-img {
+    width: 70px;
+    height: 70px;
+}
+
+.new-posts__block-content {
+    margin-left: 20px;
+}
+
+.new-posts__block-data {
+    margin-bottom: 5px;
+}
+
+/* ------------------- end sidebar new-posts ----------------- */
+
+/* ------------------- start sidebar form ----------------- */
+
+.sidebar__form-search {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.sidebar__form-search input {
+    padding-left: 20px;
+    padding-right: 10px;
+    background: #f4f7f6;
+    flex-grow: 1;
+}
+
+.sidebar__form-search button {
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+    background: #b59f5b;
+}
+
+.sidebar__form-email {
+    display: block;
+    width: 100%;
+}
+
+.sidebar__form-email input {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 10px;
+    background: #f4f7f6;
+}
+
+.sidebar__form-email button {
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 14px;
+    background: #b59f5b;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 55px;
+}
+
+/* ------------------- end sidebar form ----------------- */
+
+/* ------------------- start sidebar tags ----------------- */
+
+.sidebar__tags-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar__tags-item {
+    margin: 3px 0px;
+}
+
+.sidebar__tags-item:not(:last-child) {
+    margin-right: 5px;
+}
+
+.sidebar__tags-link {
+    display: block;
+    text-transform: uppercase;
+    border: 3px solid #eeeeee;
+    font-weight: 800;
+    font-size: 12px;
+    padding: 6px 14px;
+}
+
+.sidebar__tags-link:hover {
+    text-decoration: none;
+    border: 3px solid #e1d9bd;
+}
+
+/* ------------------- end sidebar tags ----------------- */
+
+/* ------------------- start sidebar topics ----------------- */
+
+.sidebar__topics {
+    margin-top: 50px;
+}
+
+.sidebar__topics-item {
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 14px;
+    margin-bottom: 15px;
+}
+
+.sidebar__topics-link {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.sidebar__topics-link sup{
+    color: #b59f5b;
+}
+
+/* ------------------- end sidebar topics ----------------- */
+
 /* ------------------- end sidebar ----------------- */
 
 /* ------------------- end container ----------------- */
+
+/* ------------------- start footer ----------------- */
+
+.footer__wrapper {
+    background-color: #f4f7f6;
+    margin-top: 60px;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.footer__item {
+    padding: 0 12px;
+}
+
+.footer__icon {
+    display: block;
+    height: 22px;
+    width: 22px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon-twitter {
+    background-image: url(../img/social/004-twitter.svg);
+}
+
+.icon-pinterest {
+    background-image: url(../img/social/001-pinterest.svg);
+}
+
+.icon-facebook {
+    background-image: url(../img/social/002-facebook-logo.svg);
+}
+
+.icon-instagram {
+    background-image: url(../img/social/005-instagram.svg);
+}
+
+.icon-tumblr {
+    background-image: url(../img/social/003-tumblr.svg);
+}
+
+.footer__copyright {
+    text-align: center;
+    padding: 80px 0 40px 0;
+}
+
+/* ------------------- end footer ----------------- */
+
+
+
+
 
 
 
