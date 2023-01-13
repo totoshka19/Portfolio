@@ -543,6 +543,66 @@
     </footer>
     <!-------------------- end footer -------------------->
 
+    <!-------------------- stars pop-up -------------------->
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close">X</a>
+                <h2 class="popup__title inner-title">
+                    <a class="popup__title-link inner-link" href="#">Ваш фидбек</a>
+                </h2>
+                <form class="form" action="#" method="get">
+
+                    <!-------------------- stars select -------------------->
+                    <div class="select">
+                        <label class="select__label" for="visits">
+                            Как часто вы заходите на сайт?
+                        </label>
+                        <select class="select__list" id="visits">
+                            <option>Несколько раз в день</option>
+                            <option selected>Почти каждый день</option>
+                            <option>Менее раза в неделю</option>
+                        </select>
+
+                        <!-- <select multiple size="1" class="select__list" id="visits">
+                            <option>Несколько раз в день</option>
+                            <option selected>Почти каждый день</option>
+                            <option>Менее раза в неделю</option>
+                        </select> -->
+
+                    </div>
+                    <!-------------------- end select -------------------->
+
+                    <!-------------------- stars radio -------------------->
+                    <p>Вы подписаны на e-mail рассылку?</p>
+                    <div class="radio">
+                        <div class="radio__item">
+                            <input id="radio_1" class="radio__input" name="mail" type="radio" checked>
+                            <label class="radio__label" for="radio_1">Да</label>
+                        </div>
+                        <div class="radio__item">
+                            <input id="radio_2" class="radio__input" name="mail" type="radio">
+                            <label class="radio__label" for="radio_2">Нет</label>
+                        </div>
+                    </div>
+                    <!-------------------- end radio -------------------->
+
+                    <!-------------------- stars textarea -------------------->
+                    <label class="textarea__label" for="comment">
+                        Расскажите, какой контент вы хотели бы видеть на нашем сайте?
+                    </label>
+                    <textarea class="textarea" placeholder="Может, больше рецептов?" name="comment" id="comment"
+                        cols="30" rows="10"></textarea>
+                    <!-------------------- end textarea -------------------->
+
+                    <button class="form__btn inner-btn">Отправить</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-------------------- end pop-up -------------------->
+
 </body>
 
 </html>
