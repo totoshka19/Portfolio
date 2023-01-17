@@ -1,0 +1,155 @@
+@media (max-width: 1270px) {
+  .header__nav {
+    padding-top: 50px;
+  }
+
+  .header__title {
+    padding-bottom: 95px;
+  }
+
+  .container__wrapper {
+    padding: 0 20px;
+  }
+
+  .trends__item-title {
+    font-size: 18px;
+  }
+
+  .trends__item-img {
+    max-width: 380px;
+    min-height: 250px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1199px) {
+  .header__wrapper {
+    padding: 0 15px;
+  }
+
+  .products__wrapper {
+    padding: 0 20px;
+  }
+
+  .trends__list {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1135px) {
+  .products__block {
+    justify-content: flex-start;
+    gap: 0px 30px;
+  }
+}
+
+@media (max-width: 1028px) {
+  .container__wrapper {
+    justify-content: space-around;
+  }
+
+  .content {
+    width: 380px;
+  }
+
+  .content__block {
+    flex-direction: column;
+  }
+
+  .content__block::after {
+    content: '';
+    position: relative;
+    height: 2px;
+    width: 100%;
+    background-color: #eeeeee;
+    top: 15px;
+  }
+
+  .content__block-img {
+    margin-bottom: 30px;
+  }
+
+  .content__block-text {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header__nav-list {
+    display: none;
+  }
+
+  .header__nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .humburger-menu, .humburger-menu::before, .humburger-menu::after {
+    display: block;
+  }
+}
+
+@media (max-width: 670px) {
+  .header__nav-logo {
+    position: relative;
+    width: 270px;
+    top: 150px;
+    margin: 0 auto;
+  }
+
+  .header__title {
+    padding-top: 220px;
+    font-size: 40px;
+  }
+
+  .container__wrapper {
+    flex-direction: column;
+  }
+
+  .trends__list {
+    display: block;
+    width: 100%;
+  }
+
+  .trends__item:not(:last-child) {
+    margin-bottom: 2px;
+  }
+
+  .trends__item-img {
+    max-width: 100%;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .content__block-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .sidebar {
+    margin-top: 50px;
+    max-width: 100%;
+  }
+
+  .products__item {
+    max-width: 100%;
+  }
+
+  .products__item-img {
+    width: 90%;
+    height: auto;
+  }
+
+  .products__description {
+    height: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .header__title {
+    padding-top: 220px;
+    font-size: 30px;
+  }
+}
