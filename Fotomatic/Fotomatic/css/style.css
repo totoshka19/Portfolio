@@ -61,7 +61,7 @@ a {
 }
 
 .wrapper {
-    width: 75rem;
+    max-width: 75rem;
     margin: 0 auto;
     display: block;
 }
@@ -110,6 +110,14 @@ a {
 }
 
 .nav__btn {
+    display: none;
+    background-color: #9dc20a;
+    color: white;
+    padding: 3px 8px;
+    font-size: 1.2rem;
+}
+
+.header__nav-mobile {
     display: none;
 }
 
@@ -252,6 +260,7 @@ a {
 }
 
 .slogan__title {
+    display: block;
     font-family: Palatino;
     font-size: 1.8rem;
 }

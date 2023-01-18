@@ -1,0 +1,136 @@
+@media (max-width: 1065px) {
+    .header__wrapper {
+        padding: 1.5rem 1.87rem;
+    }
+   
+   .photo__block {
+        padding: 4rem 1%;
+    }
+
+    .photo__item {
+        text-align: left;
+    }
+
+    .photo__item p {
+        padding: 1rem 0;
+    }
+
+    .filters__block p {
+        display: block;
+        padding: 0 10rem;
+    }
+
+    .slogan__wrapper {
+        padding: 5rem 1.87rem;
+    }
+
+    .footer__wrapper {
+        padding: 2rem 1.87rem;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .nav__item:not(:last-child) {
+        padding-right: 20px;
+    }
+
+    .nav__btn {
+        display: block;
+    }
+
+    .banner__wrapper {
+        padding: 100px;
+    }
+
+    .banner__block {
+        width: 100%;
+        background-color: #9dc20a00;
+        border: 1px solid #97979700;
+    }
+
+    .banner__block p {
+        display: none;
+    }
+
+    .banner__btn{
+        display: none;
+    }
+
+   .photo__item {
+        width: 45%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .header__nav, .header__logo {
+        display: none;
+    }
+
+    .banner__wrapper{
+        padding: 80px 10px;
+    }
+
+    .banner__block {
+        padding: 12px 10px 16px;
+    }
+
+    .header__nav-mobile {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__nav-mobile li {
+        padding-right: 5rem;
+    }
+
+    .header__nav-mobile li img {
+        width: auto;
+        height: 2rem;
+        object-fit: cover;
+    }
+
+    .nav__btn {
+        font-size: 2rem;
+    }
+
+    .photo__item {
+        width: 100%;
+    }
+
+    .photo__img {
+        height: 15rem;
+    }
+
+    .filters__img img:last-child {
+        display: none;
+    }
+
+    .filters__block p {
+        padding: 0 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header__nav-mobile li {
+        padding-right: 3rem;
+    }
+
+    .slogan__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .slogan__wrapper {
+        padding: 1.8rem 1rem;
+    }
+
+    .slogan__wrapper img {
+        padding: 1.8rem 0;
+    }
+
+    .slogan__title {
+        text-align: center;
+    }
+
+  }
