@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rosario:wght@700&display=swap');
-/* font-family: 'DM Sans', sans-serif;
-font-family: 'Rosario', sans-serif; */
 
 :root {
     /* ---------------------- font family ---------------------- */
@@ -98,7 +96,17 @@ body {
 }
 
 .header {
+    height: 149px;
+}
+
+.header__fixed {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 50px 0 43px 0;
+    background: var(--bg-white);
 }
 
 .container {
@@ -334,7 +342,8 @@ body {
 }
 
 .service-item {
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     background: var(--bg-white);
     position: relative;
     padding: 40px 59px 40px 163px;
@@ -436,7 +445,8 @@ body {
 }
 
 .service-img figure {
-    width: 354px;
+    max-width: 354px;
+    width: 100%;
     animation: moveImg 2s linear infinite;
 }
 
@@ -488,11 +498,13 @@ body {
 }
 
 .vegetable-img {
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
 }
 
 .vegetables-content {
-    width: 574px;
+    max-width: 574px;
+    height: 100%;
     padding-top: 30px;
 }
 
@@ -544,8 +556,8 @@ body {
 }
 
 .customer-img {
-    width: 450px;
-    height: 450px;
+    max-width: 450px;
+    max-height: 450px;
 }
 
 .slider-btn {
@@ -612,8 +624,6 @@ body {
 }
 
 .customer-man {
-    width: 450px;
-    height: 450px;
     position: relative;
     top: 30px;
     border-radius: 50%;
@@ -621,8 +631,6 @@ body {
 }
 
 .customer-woman {
-    width: 450px;
-    height: 450px;
     position: relative;
     top: 60px;
     border-radius: 50%;

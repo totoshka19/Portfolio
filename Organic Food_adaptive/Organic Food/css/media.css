@@ -1,11 +1,27 @@
 @media (max-width: 1250px) {
-    .header {
+    .header__fixed {
         padding: 50px 10px 43px 10px;
     }
 
     .hero-inner-wrapper {
         padding: 93px 10px 33px 10px;
         background-size: auto;
+    }
+
+    .service {
+        padding: 141px 10px 166px 10px;
+    }
+
+    .wrapper.vegetables-inner-wrapper {
+        padding: 89px 10px 143px 10px;
+    }
+
+    .customers {
+        padding: 96px 10px 150px 10px;
+    }
+
+    .customer-wrapper {
+        flex-wrap: nowrap;
     }
 }
 
@@ -30,6 +46,22 @@
 
     .hero-img {
         width: 100%;
+    }
+
+    .customer-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .slider-btn {
+        bottom: 500px;
+    }
+
+    .slider-prev {
+        left: 30%;
+    }
+
+    .slider-next {
+        left: 40%;
     }
 }
    
@@ -74,7 +106,7 @@
     }
 }
 
-@media (max-width: 760px ) {
+@media (max-width: 768px) {
     .header-logo {
         width: 45px;
     }
@@ -86,10 +118,60 @@
     .cart {
         margin: 0 5px 0 28px;
     }
+
+    .service-content {
+        width: 100%;
+    }
+
+    .service-item {
+        margin: 0 auto 20px;
+    }
+
+    .wrapper.vegetables-inner-wrapper {
+        background-size: 50%;
+    }
+
+    .customer-text {
+        width: 100%;
+    }
+
+    .slider-btn {
+        bottom: 480px;
+    }
+
+    .slider-prev {
+        left: 40%;
+    }
+
+    .slider-next {
+        left: 55%;
+    }
 }
 
 @media (max-width: 590px ) {
-  
+    .service-wrapper {
+        gap: 50px;
+    }
+
+    .service-img {
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/elips-fruit.png);
+        background-position: bottom 0px center;
+        background-size: auto;
+    }
+
+    .slider-btn {
+        bottom: 510px;
+    }
+
+    .slider-prev {
+        left: 55%;
+    }
+
+    .slider-next {
+        left: 70%;
+    }
 }
 
 @media (max-width: 450px ) {
@@ -104,6 +186,37 @@
     .hero-title {
         font-size: 50px;
         line-height: 70px;
+    }
+
+    .service-item {
+        padding: 40px 20px 40px 20px;
+    }
+
+    .service-item span:first-child,
+    .service-item::before {
+        display: none;
+    }
+
+    .inner-title {
+        font-size: 45px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .service-img {
+        background-size: 100%;
+    }
+
+    .slider-btn {
+        bottom: 410px;
+    }
+
+    .slider-prev {
+        left: 60%;
+    }
+
+    .slider-next {
+        left: 80%;
     }
 }
  

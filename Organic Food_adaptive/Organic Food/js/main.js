@@ -28,4 +28,7 @@ $(document).ready(function () {
         $(".nav").toggleClass("active")
         $("body").toggleClass("hidden")
     })
+
+    // burger
+
 });
