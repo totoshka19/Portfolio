@@ -16,12 +16,20 @@
         padding: 89px 10px 143px 10px;
     }
 
+    .inner-text {
+       text-align: justify;
+    }
+
     .customers {
-        padding: 96px 10px 150px 10px;
+        padding: 96px 20px 150px 20px;
     }
 
     .customer-wrapper {
         flex-wrap: nowrap;
+    }
+
+    .footer {
+        padding: 67px 20px 118px 20px;
     }
 }
 
@@ -50,6 +58,12 @@
 
     .customer-wrapper {
         flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .customer-text {
+        width: 100%;
+        text-align: justify;
     }
 
     .slider-btn {
@@ -57,12 +71,34 @@
     }
 
     .slider-prev {
-        left: 30%;
+        left: 50%;
     }
 
     .slider-next {
-        left: 40%;
+        left: 60%;
     }
+
+    .app-wrapper {
+        padding: 0 20px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .app-content {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .app-text {
+        width: 100%;
+        text-align: justify;
+        margin: 20px 0px 50px 0px;
+    }
+
+    .footer-text {
+        width: 100%;
+    }
+     
 }
    
 @media (max-width: 850px) {
@@ -140,11 +176,11 @@
     }
 
     .slider-prev {
-        left: 40%;
+        left: 50%;
     }
 
     .slider-next {
-        left: 55%;
+        left: 65%;
     }
 }
 
@@ -171,6 +207,23 @@
 
     .slider-next {
         left: 70%;
+    }
+
+    .footer-wrapper {
+        justify-content: space-around;
+        gap: 45px;
+    }
+ 
+    .footer-logo {
+        margin: 0 auto 20px;
+    }
+
+    .footer-title {
+        margin-bottom: 20px;
+    }
+
+    .footer-social {
+        justify-content: center;
     }
 }
 
@@ -208,15 +261,15 @@
     }
 
     .slider-btn {
-        bottom: 410px;
+        bottom: 420px;
     }
 
     .slider-prev {
-        left: 60%;
+        left: 65%;
     }
 
     .slider-next {
-        left: 80%;
+        left: 85%;
     }
 }
  
