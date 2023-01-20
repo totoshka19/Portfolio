@@ -1,3 +1,256 @@
-h1 {
-    color: blueviolet;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto+Mono&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* ----------------- Обнуление стилей ------------------- */
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
+
+*, *::before, *::after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav, footer, header, aside{display: block;}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited, a:hover {text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+/* ----------------- Общие стили ------------------- */
+
+:root {
+    /* ---------------------- font family ---------------------- */
+    /* --ff-DmSans: 'DM Sans', sans-serif;
+    --ff-Rosario: 'Rosario', sans-serif; */
+
+    /* ---------------------- color ---------------------- */
+    --color-primary: #F8B700;
+    /* --color-secondary: #555555;
+    --color-black: #000000;
+    --color-dark: #333333;
+    --color-white: #ffffff;
+    --btn-border: #ccc; */
+
+    /* ---------------------- backgroun ---------------------- */
+    /* --bg-mint-cream: #F3FBF8;
+    --bg-green-lt: #09A66D;
+    --bg-white: #ffffff;
+    --bg-green-lt-op: #09a66d0d;
+    --bg-footer: #FCFEFD; */
+}
+
+
+body, html {
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Open-Sans',Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    background: #170e09;
+}
+
+.wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.inner__title {
+    color: var(--color-primary);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.inner__link {
+    color: var(--color-primary);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.inner__link:hover {
+    color: #fcf8eb;
+    text-transform: uppercase;
+}
+
+/* ----------------- Navigation ------------------- */
+
+/* .nav {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(Source/sitenav_bar_bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 16px;
+    position: sticky;
+    top: 0px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav__link {
+    display: block;
+    padding: 20px;
+}
+
+.nav__lng {
+    padding: 20px;
+} */
+
+/* ----------------- Header ------------------- */
+
+.header {
+    background-image: url(Source/bg_masthead.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 10%;
+}
+
+.header__wrapper {
+    padding: 50px 0;
+}
+
+.nav {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(Source/sitenav_bar_bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 16px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav__link {
+    display: block;
+    padding: 20px;
+}
+
+.nav__lng {
+    padding: 20px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__title {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.about__title span {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.about__photo {
+    width: 500px;
+    height: 500px;
+}
+
+.about__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 30px 0;
+}
+
+/* ----------------- Portfolio ------------------- */
+
+.portfolio {
+    background-image: url(Source/Box-leather-blue.jpg);
+}
+
+.portfolio__title {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.portfolio__list {
+    padding: 40px 0;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio__link::before {
+    content: '';
+    position: absolute;
+    width: 450px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: .5s ease;
+}
+
+.portfolio__link:hover::before {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.portfolio__link img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid var(--color-primary);
+    border-radius: 20px;
+}
+
+.portfolio__item-title {
+    padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

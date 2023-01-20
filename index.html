@@ -6,37 +6,154 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Home page</title>
+    <link rel="stylesheet" href="media.css">
+    <title>Portfolio</title>
 </head>
 
 <body>
-    <h1>My portfolio</h1>
-    <ol>
-        <li>
-            <a href="Cars/Cars/index.html" target="_blank">Project "Cars"</a>
-        </li>
-        <li>
-            <a href="Mono Store/Mono Store/index.html" target="_blank">Project "Mono Store"</a>
-        </li>
-        <li>
-            <a href="Organic Food/Organic Food/index.html" target="_blank">Project "Organic Food"</a>
-        </li>
-        <li>
-            <a href="Organic Food_adaptive/Organic Food/index.html" target="_blank">Project "Organic Food adaptive"</a>
-        </li>
-        <li>
-            <a href="GoCorona/GoCorona/index.html" target="_blank">Project "GoCorona"</a>
-        </li>
-        <li>
-            <a href="Noemi/Noemi/index.html" target="_blank">Project "Noemi"</a>
-        </li>
-        <li>
-            <a href="Noemi_adaptive/Noemi/index.html" target="_blank">Project "Noemi adaptive"</a>
-        </li>
-        <li>
-            <a href="Fotomatic/Fotomatic/index.html" target="_blank">Project "Fotomatic"</a>
-        </li>
-    </ol>
+
+    <!-- ----------------- Navigation ------------------- -->
+    <!-- <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="#" class="nav__link inner__link">
+                    Обо мне
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link inner__link">
+                    Примеры работ
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link inner__link">
+                    Дипломы и сертификаты
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link inner__link">
+                    Связаться со мной
+                </a>
+            </li>
+        </ul>
+        <div class="nav__lng">
+            <a class="nav__lng inner__link" href="#">ru</a>
+            <a class="nav__lng inner__link" href="#">en</a>
+        </div>
+    </nav> -->
+
+    <!-- ----------------- Header ------------------- -->
+    <header class="header">
+        <div class="header__wrapper wrapper">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link inner__link">
+                            Обо мне
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link inner__link">
+                            Примеры работ
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link inner__link">
+                            Дипломы и сертификаты
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link inner__link">
+                            Связаться со мной
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav__lng">
+                    <a class="nav__lng inner__link" href="#">ru</a>
+                    <a class="nav__lng inner__link" href="#">en</a>
+                </div>
+            </nav>
+            <div class="about">
+                <h1 class="about__title">
+                    Анна Капитанова <br>
+                    <span>Frontend Developer</span>
+                </h1>
+                <figure class="about__photo">
+                    <img src="Source/Me1.jpg" alt="Photo">
+                </figure>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+
+        <!-- ----------------- Portfolio ------------------- -->
+        <section class="portfolio">
+            <div class="portfolio__wrapper wrapper">
+                <h2 class="portfolio__title">Примеры работ</h2>
+                <ul class="portfolio__list">
+                    <li class="portfolio__item">
+                        <a class="portfolio__link inner__link" href="Cars/Cars/index.html" target="_blank">
+                            <img src="Source/cars.png" alt="cars">
+                        </a>
+                        <h3 class="portfolio__item-title inner__title">Проект "Cars"</h3>
+                    </li>
+                    <li class="portfolio__item">
+                        <a class="portfolio__link inner__link" href="Mono Store/Mono Store/index.html" target="_blank">
+                            <img src="Source/mono.png" alt="monostore">
+                        </a>
+                        <h3 class="portfolio__item-title inner__title">Проект "Mono Store"</h3>
+                    </li>
+                    <li class="portfolio__item">
+                        <a class="portfolio__link inner__link" href="Organic Food/Organic Food/index.html"
+                            target="_blank">
+                            <img src="Source/organic.png" alt="organic">
+                        </a>
+                        <h3 class="portfolio__item-title inner__title">Проект "Organic Food"</h3>
+                    </li>
+                    <li class="portfolio__item">
+                        <a class="portfolio__link inner__link" href="Organic Food_adaptive/Organic Food/index.html"
+                            target="_blank">
+                            <img src="Source/organic-ad.png" alt="organic-adaptive">
+                        </a>
+                        <h3 class="portfolio__item-title inner__title">Проект "Organic Food adaptive"</h3>
+                    </li>
+                    <li class="portfolio__item">
+                        <a class="portfolio__link inner__link" href="GoCorona/GoCorona/index.html" target="_blank">
+                            <img src="Source/go.png" alt="go-corona">
+                        </a>
+                        <h3 class="portfolio__item-title inner__title">Проект "GoCorona"</h3>
+                    </li>
+                    <li class="portfolio__item">
+                        <a class="portfolio__link inner__link" href="Noemi/Noemi/index.html" target="_blank">
+                            <img src="Source/noemi.png" alt="noemi">
+                        </a>
+                        <h3 class="portfolio__item-title inner__title">Проект "Noemi"</h3>
+                    </li>
+                    <li class="portfolio__item">
+                        <a class="portfolio__link inner__link" href="Noemi_adaptive/Noemi/index.html" target="_blank">
+                            <img src="Source/noemi-ad.png" alt="noemi-adaptive">
+                        </a>
+                        <h3 class="portfolio__item-title inner__title">Проект "Noemi adaptive"</h3>
+                    </li>
+                    <li class="portfolio__item">
+                        <a class="portfolio__link inner__link" href="Fotomatic/Fotomatic/index.html" target="_blank">
+                            <img src="Source/fotomatic.png" alt="fotomatic">
+                        </a>
+                        <h3 class="portfolio__item-title inner__title">Проект "Fotomatic adaptive"</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+
+
 
 </body>
 
