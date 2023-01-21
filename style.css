@@ -69,7 +69,7 @@ body, html {
     color: #fff;
     font-weight: 400;
     font-family: 'Open-Sans',Arial,Helvetica,sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     background: #170e09;
 }
 
@@ -79,9 +79,10 @@ body, html {
 }
 
 .inner__title {
-    color: var(--color-primary);
-    font-weight: 600;
-    text-transform: uppercase;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
 }
 
 .inner__link {
@@ -240,8 +241,72 @@ body, html {
 }
 
 .portfolio__item-title {
+    font-size: 20px;
     padding-top: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-primary);
 }
+
+/* ----------------- Certificates ------------------- */
+.certificates {
+    background-image: url(Source/sitenav-bar-user.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.certificates__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0;
+    gap: 30px;
+}
+
+.certificates__item {
+    width: 300px;
+}
+
+.certificates__item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.certificates__link {
+    display: block;
+    padding: 0 10px 10px 10px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* ----------------- Footer ------------------- */
+
+.footer {
+    background-image: url(Source/Pane-leather-gray-map.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.social__list {
+    display: flex;
+    justify-content: center;
+}
+
+.social__item {
+    padding: 40px 20px;
+}
+
+.social__link {
+    display: block;
+    font-size: 60px;
+    color: var(--color-primary);
+}
+
+
+
+
+
 
 
 
