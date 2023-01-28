@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;500;700&family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@700&display=swap');
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(../fonts/FontsFree-Net-SFProDisplay-Bold.ttf), url(../fonts/FontsFree-Net-SFProDisplay-Light.ttf);
+}
+
+/* @font-face {
+    font-family: 'SF Light';
+    src: url(../fonts/FontsFree-Net-SFProDisplay-Light.ttf);
+} */
+
+:root {
+ /* ---------------------- font family ---------------------- */
+ --ff-Merriweather: 'Merriweather', sans-serif;
+ --ff-Montserrat: 'Montserrat', sans-serif;
+ --ff-OpenSans: 'Open Sans', sans-serif;
+ --ff-Raleway: 'Raleway', sans-serif;
+ --ff-SF: 'SF Pro Display', sans-serif;
+
+ /* ---------------------- color ---------------------- */
+ /* --color-primary: #222222; */
+ /* --color-secondary: #555555; */
+ /* --color-black: #000000; */
+ --color-yellow: #FCBB08;
+ --color-white: #ffffff;
+ --color-grey: #373A39;
+ --color-black-grey: #333333;
+
+
+ /* --btn-border: #ccc; */
+
+ /* ---------------------- backgroun ---------------------- */
+ /* --bg-mint-cream: #F3FBF8; */
+ /* --bg-green-lt: #09A66D; */
+ /* --bg-white: #ffffff; */
+ /* --bg-green-lt-op: #09a66d0d; */
+ /* --bg-footer: #FCFEFD; */
+}
+
+/* ---------------- start common styles ---------------- */
+
+body {
+    font-family: var(--ff-SF);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* ---------------- end common styles ---------------- */
+
+/* ---------------- start header ---------------- */
+
+.header {
+    text-transform: uppercase;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: var(--color-white);
+}
+
+.logo {
+    font-family: var(--ff-Montserrat);
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--color-black-grey);
+    padding-left: 135px;
+}
+
+.logo::after {
+    content: url(../img/icon/logo.svg);
+    position: relative;
+    transform: rotate(-40deg);
+    top: -23px;
+    left: -15px;
+}
+
+.nav {
+    font-family: var(--ff-Raleway);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    padding-right: 53px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__item {
+    display: block;
+    padding: 0 5px;
+    margin: 0 20px;
+}
+
+.nav__item:hover {
+    border-bottom: 1px solid var(--color-yellow);
+}
+
+.nav__link {
+    color: var(--color-grey);
+}
+
+.banner {
+    background-image: url(../img/Header-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-height: 752px;
+    font-family: 'Montserrat';
+    text-align: center;
+    padding: 341px 0 323px;
+}
+
+.banner__title {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 88px;
+    color: var(--color-white);
+}
+
+.banner span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2.74286px;
+    color: var(--color-yellow);
+}
+
+/* ---------------- end header ---------------- */
