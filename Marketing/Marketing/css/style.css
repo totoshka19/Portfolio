@@ -71,6 +71,8 @@ body {
     right: 0px;
     left: 0px;
     background-color: var(--color-white);
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -142,6 +144,29 @@ body {
     line-height: 20px;
     letter-spacing: 2.74286px;
     color: var(--color-yellow);
+}
+
+.banner__scroll {
+    display: block;
+    width: 26px;
+    height: 43px;
+    border: 2px solid var(--color-white);
+    border-radius: 100px;
+    margin: 187px auto;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+}
+
+.banner__scroll::after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    width: 6px;
+    height: 6px;
+    background: var(--color-white);
+    border-radius: 50%;
 }
 
 /* ---------------- end header ---------------- */
