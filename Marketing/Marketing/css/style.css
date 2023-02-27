@@ -77,7 +77,7 @@ body {
     font-size: 60px;
     line-height: 75px;
     letter-spacing: -1.65px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     color: var(--color-black-grey-title);
     background-image: url(../img/Rectangle.svg);
     background-repeat: no-repeat;
@@ -290,6 +290,29 @@ body {
 }
 
 /* ---------------- end section services ---------------- */
+
+/* ---------------- start section vision ---------------- */
+
+.vision {
+    display: flex;
+    background-color: var(--bg-grey-lt);
+}
+
+.vision__text {
+    padding: 101px 135px 180px 130px;
+}
+
+.vision__text-title {
+    text-transform: none;
+    margin-bottom: 57px;
+}
+
+.vision__article p:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+/* ---------------- end section vision ---------------- */
+
 
 
 
