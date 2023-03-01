@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;500;700&family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@700&display=swap');
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(../fonts/SFPro-light/SFProDisplay-Light.eot);
+    src: local('SF Pro Display Light'), local('SFProDisplay-Light'),
+        url(../fonts/SFPro-light/SFProDisplay-Light.eot) format('embedded-opentype'),
+        url(../fonts/SFPro-light/SFProDisplay-Light.woff2) format('woff2'),
+        url(../fonts/SFPro-light/SFProDisplay-Light.woff) format('woff'),
+        url(../fonts/SFPro-light/SFProDisplay-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(../fonts/SFPro-bold/SFProDisplay-Bold.eot);
+    src: local('SF Pro Display Bold'), local('SFProDisplay-Bold'),
+        url(../fonts/SFPro-bold/SFProDisplay-Bold.eot) format('embedded-opentype'),
+        url(../fonts/SFPro-bold/SFProDisplay-Bold.woff2) format('woff2'),
+        url(../fonts/SFPro-bold/SFProDisplay-Bold.woff) format('woff'),
+        url(../fonts/SFPro-bold/SFProDisplay-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+ /* ---------------------- font family ---------------------- */
+ --ff-Merriweather: 'Merriweather', sans-serif;
+ --ff-Montserrat: 'Montserrat', sans-serif;
+ --ff-OpenSans: 'Open Sans', sans-serif;
+ --ff-Raleway: 'Raleway', sans-serif;
+ --ff-SF: 'SF Pro Display', sans-serif;
+
+ /* ---------------------- color ---------------------- */
+ /* --color-primary: #222222; */
+ /* --color-secondary: #555555; */
+ /* --color-black: #000000; */
+ --color-yellow: #FCBB08;
+ --color-white: #ffffff;
+ --color-grey: #373A39;
+ --color-black-grey: #333333;
+ --color-light-grey: #777777;
+ --color-black-grey-title: #242121;
+
+
+
+ /* --btn-border: #ccc; */
+
+ /* ---------------------- backgroun ---------------------- */
+ /* --bg-mint-cream: #F3FBF8; */
+ --bg-grey-lt: #F6F8FA;
+ /* --bg-white: #ffffff; */
+ /* --bg-green-lt-op: #09a66d0d; */
+ /* --bg-footer: #FCFEFD; */
+}
+
+/* ---------------- start common styles ---------------- */
+
+body {
+    font-family: var(--ff-SF);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-grey);
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.title {
+    text-transform: capitalize;
+    font-family: var(--ff-Montserrat);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    letter-spacing: -1.65px;
+    padding-bottom: 15px;
+    color: var(--color-black-grey-title);
+    background-image: url(../img/Rectangle.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: auto;
+}
+
+.nav {
+    font-family: var(--ff-Raleway);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    /* padding-right: 53px; */
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__item {
+    display: block;
+    padding: 0 5px;
+    margin: 0 20px;
+}
+
+.nav__item:hover {
+    border-bottom: 1px solid var(--color-yellow);
+}
+
+.link {
+    color: var(--color-grey);
+    text-transform: uppercase;
+}
+
+/* ---------------- end common styles ---------------- */
+
+/* ---------------- start header ---------------- */
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 53px 20px 0;
+    background-color: var(--color-white);
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+.logo {
+    font-family: var(--ff-Montserrat);
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: uppercase;
+    line-height: 44px;
+    color: var(--color-black-grey);
+    padding-left: 135px;
+}
+
+.logo::after {
+    content: url(../img/icon/logo.svg);
+    position: relative;
+    transform: rotate(-40deg);
+    top: -23px;
+    left: -15px;
+}
+
+.banner {
+    background-image: url(../img/Header-bg.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-height: 657px;
+    font-family: 'Montserrat';
+    text-align: center;
+    padding: 251px 0 323px;
+}
+
+.banner__title {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 88px;
+    color: var(--color-white);
+}
+
+.banner span {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2.74286px;
+    color: var(--color-yellow);
+    margin-top: 25px;
+}
+
+.banner__scroll {
+    display: block;
+    margin: 160px auto;
+}
+
+/* ---------------- end header ---------------- */
+
+/* ---------------- start section about ---------------- */
+
+.about {
+    background: var(--bg-grey-lt);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 152px 135px 159px;
+}
+
+.about__article {
+    max-width: 770px;
+}
+
+.about__article p:not(:last-child) {
+    padding-bottom: 10px;
+}
+
+/* ---------------- end section about ---------------- */
+
+/* ---------------- start section expertise ---------------- */
+
+.expertise {
+    padding: 143px 135px 50px;
+}
+
+.expertise__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 90px 0 100px;
+}
+
+.skill-item {
+    display: block;
+}
+
+.skill-item:not(:last-child) {
+    margin-bottom: 28px;
+}
+
+.expertise__article {
+    margin-left: 30px;
+    position: relative;
+    top: -10px;
+}
+
+.expertise__article p:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+/* ---------------- end section expertise ---------------- */
+
+/* ---------------- start section services ---------------- */
+
+.services {
+    padding: 0px 135px 164px 135px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__item {
+    display: flex;
+    align-items:flex-start;
+}
+
+.services__item:not(:last-child) {
+    margin-right: 27px;
+}
+
+.services__img {
+    margin-right: 35px;
+}
+
+.services__item-title {
+    letter-spacing: 4.29px;
+    font-weight: 700;
+    padding-bottom: 18px;
+}
+
+.services__item-article {
+    color: var(--color-light-grey);
+}
+
+/* ---------------- end section services ---------------- */
+
+/* ---------------- start section vision ---------------- */
+
+.vision {
+    display: flex;
+    background-color: var(--bg-grey-lt);
+}
+
+.vision__text {
+    padding: 101px 135px 180px 130px;
+}
+
+.vision__text-title {
+    text-transform: none;
+    margin-bottom: 57px;
+}
+
+.vision__article p:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+/* ---------------- end section vision ---------------- */
+
+/* ---------------- start section portfolio ---------------- */
+
+.portfolio__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 139px 135px 130px 135px;
+}
+
+.portfolio__gallery {
+    text-transform: uppercase;
+}
+
+.portfolio__gallery-table {
+}
+
+.portfolio__gallery-table td:not(:last-child) {
+    padding-right: 20px;
+}
+
+.table__list {
+}
+
+.table__item {
+}
+
+.table__item:not(:last-child) {
+    padding-bottom: 20px;
+}
+
+.table__item-content {
+    /* height: 100%;
+    width: 100%;
+    object-fit: cover; */
+    position: relative;
+}
+
+
+
+/* ---------------- end section portfolio ---------------- */
+
+
+
+
+
