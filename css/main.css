@@ -1,5 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    color: #000000;
+
 }
 
 .container {
@@ -77,10 +79,28 @@ body {
 }
 
 .card {
-    padding: 20px;
     max-width: 540px;
     background-color: #fff;
     box-shadow: 0 10px 40px rgba(126, 155, 189, 0.35);
+    transition: .5s ease;
+}
+
+.card:hover {
+    transform: translatey(-10px);
+    transition: .5s ease;
+}
+
+.card-link {
+    display: block;
+    padding: 20px;
+    color: #000000;
+    transition: color .5s ease;
+}
+
+.card-link:hover {
+    color: rgb(39, 91, 236);
+    box-shadow: 0 10px 40px rgba(112, 173, 246, 0.35);
+    transition: color .5s ease;
 }
 
 .card__img {
@@ -95,13 +115,13 @@ body {
     font-weight: 600;
     font-size: 24px;
     line-height: 130%;
-    color: #000000;
+    /*color: #000000;*/
 }
 
 .card p {
     font-size: 16px;
     line-height: 130%;
-    color: #000000;
+    /*color: #000000;*/
 }
 
 /* ------------------- Footer ------------------- */
@@ -150,6 +170,41 @@ body {
 
 .footer-icons-row a {
     margin-right: 30px;
+}
+
+.footer-link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.link-github {
+    background-image: url("../img/social/github.svg");
+}
+
+.link-github:hover {
+    background-image: url("../img/social/github-hover.svg");
+}
+
+.link-linkedin {
+    background-image: url("../img/social/linkedin.svg");
+}
+
+.link-linkedin:hover {
+    background-image: url("../img/social/linkedin-hover.svg");
+}
+
+.link-facebook {
+    background-image: url("../img/social/facebook.svg");
+    background-position: center;
+    background-size: contain;
+}
+
+.link-facebook:hover {
+    background-image: url("../img/social/facebook-hover.svg");
 }
 
 .footer-contacts p {
