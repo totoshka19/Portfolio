@@ -8,21 +8,19 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="header">
+<header class="header" id="header">
     <h1 class="header__title">Анна Капитанова</h1>
     <!--<p class="header__subtitle">фрилансер, веб-разработчик, создание сайтов</p>-->
     <!--<p class="header__subtitle">Более 17 лет работала в сфере финансов, но решилась освоить новую профессию, учусь на front-end developer. Освоила html и css. Ищу работу или стажировку как верстальщик.</p>-->
     <p class="header__subtitle">учусь на front-end разработчика<br>Ищу работу или стажировку как верстальщик</p>
-
-    <div class="header-arrow">
-        <a href="#portfolio">
-            <img src="./img/header/chevron-down.svg" alt="Arrow">
-        </a>
-    </div>
+    <a href="#portfolio" class="header-arrow">
+        <img src="./img/header/chevron-down.svg" alt="Arrow">
+    </a>
 </header>
 
 <main class="portfolio" id="portfolio">
@@ -34,7 +32,7 @@
             <div class="card">
                 <a class="card-link" href="./Projects/Cars/Cars/index.html" target="_blank">
                     <img class="card__img" src="./img/portfolio/cars.jpg" alt="Лендинг Cars">
-                    <h3 class="card__title" >Адаптивный лендинг</h3>
+                    <h3 class="card__title">Адаптивный лендинг</h3>
                     <p>Верстка одностраничного сайта.</p>
                 </a>
             </div>
@@ -89,8 +87,6 @@
 
         </div>
 
-
-
     </div>
 
 </main>
@@ -119,11 +115,11 @@
             <div class="footer-contacts">
                 <p>Связаться со мной:</p>
                 <div class="footer-icons-row">
-                    <a href="https://t.me/Totoshka19" class="footer-button" target="_blank">
-                        <img src="./img/social/telegram.svg" alt="Telegram">
+                    <a href="https://t.me/Totoshka19" class="footer-link link-telegram" target="_blank">
+<!--                        <img src="./img/social/telegram.svg" alt="Telegram">-->
                     </a>
-                    <a href="https://api.whatsapp.com/send/?phone=79162979015&text&type=phone_number&app_absent=0" class="footer-button" target="_blank">
-                        <img src="./img/social/whatsapp.svg" alt="WhatsApp">
+                    <a href="https://api.whatsapp.com/send/?phone=79162979015&text&type=phone_number&app_absent=0" class="footer-link link-whatsapp" target="_blank">
+<!--                        <img src="./img/social/whatsapp.svg" alt="WhatsApp">-->
                     </a>
                 </div>
             </div>
@@ -131,7 +127,14 @@
     </div>
 </footer>
 
-<!--Изображение от <a href="https://ru.freepik.com/free-vector/colorful-illustration-of-female-programmer-working_5483075.htm#query=%D0%B4%D0%B5%D0%B2%D1%83%D1%88%D0%BA%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82&position=7&from_view=search&track=ais">Freepik</a>-->
+<!--Libraries and plugins-->
+
+<script src="./libs/jquery/jquery-3.6.4.min.js"></script>
+<script src="./libs/vide/jquery.vide.min.js"></script>
+
+<!--Own scripts and library calls-->
+
+<script src="./js/main.js"></script>
 
 </body>
 </html>
