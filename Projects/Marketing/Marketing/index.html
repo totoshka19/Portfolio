@@ -12,9 +12,10 @@
 
 <body>
 
-    <!-- ---------------- start header ---------------- -->
-    <header class="header wrapper">
-        <div class="header__nav">
+<!-- ---------------- start header ---------------- -->
+<header class="header">
+    <div class="header__wrapper">
+        <div class="header__nav wrapper">
             <span class="logo">om</span>
             <nav class="nav">
                 <ul class="nav__list">
@@ -24,12 +25,12 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link link" href="#">
+                        <a class="nav__link link" href="#about">
                             about us
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link link" href="#">
+                        <a class="nav__link link" href="#portfolio">
                             portfolio
                         </a>
                     </li>
@@ -51,16 +52,20 @@
                 </ul>
             </nav>
         </div>
-        <div class="banner wrapper">
-            <h1 class="banner__title">O...MARKETING</h1>
-            <span>DIGITAL MARKETING AGENCY</span>
+    </div>
+    <div class="banner wrapper">
+        <h1 class="banner__title">O...MARKETING</h1>
+        <span>DIGITAL MARKETING AGENCY</span>
+        <a href="#about">
             <img class="banner__scroll" src="img/mouse.svg" alt="scroll">
-        </div>
-    </header>
-    <!-- ---------------- end header ---------------- -->
+        </a>
+    </div>
+</header>
+<!-- ---------------- end header ---------------- -->
 
-    <!-- ---------------- start section about ---------------- -->
-    <section class="about wrapper">
+<!-- ---------------- start section about ---------------- -->
+<section class="about" id="about">
+    <div class="about__wrapper wrapper">
         <h2 class="about__title title">About us</h2>
         <article class="about__article article">
             <p>
@@ -75,11 +80,13 @@
                 учитываем все имеющиеся данные.
             </p>
         </article>
-    </section>
-    <!-- ---------------- end section about ---------------- -->
+    </div>
+</section>
+<!-- ---------------- end section about ---------------- -->
 
-    <!-- ---------------- start section expertise ---------------- -->
-    <section class="expertise wrapper">
+<!-- ---------------- start section expertise ---------------- -->
+<section class="expertise">
+    <div class="wrapper">
         <h2 class="expertise__title title">Our expertise</h2>
         <div class="expertise__content">
             <figure class="expertise__skills">
@@ -99,11 +106,13 @@
                 </p>
             </article>
         </div>
-    </section>
-    <!-- ---------------- end section expertise ---------------- -->
+    </div>
+</section>
+<!-- ---------------- end section expertise ---------------- -->
 
-    <!-- ---------------- start section services ---------------- -->
-    <section class="services wrapper">
+<!-- ---------------- start section services ---------------- -->
+<section class="services">
+    <div class="services__wrapper wrapper">
 
         <div class="services__item">
             <img class="services__img" src="img/graphic.svg" alt="GRAPHIC DESIGN">
@@ -138,12 +147,14 @@
             </div>
         </div>
 
-    </section>
-    <!-- ---------------- end section services ---------------- -->
+    </div>
+</section>
+<!-- ---------------- end section services ---------------- -->
 
-    <!-- ---------------- start section vision ---------------- -->
-    <section class="vision wrapper">
-        <img class="vision__img" src="img/vision_img.png" alt="dog">
+<!-- ---------------- start section vision ---------------- -->
+<section class="vision">
+    <img class="vision__img" src="img/vision_img.png" alt="dog">
+    <div class="vision__wrapper">
         <div class="vision__text">
             <h4 class="vision__text-title title">
                 Let’s make magic.
@@ -164,143 +175,98 @@
                 </p>
             </article>
         </div>
-    </section>
-    <!-- ---------------- end section vision ---------------- -->
+    </div>
+</section>
+<!-- ---------------- end section vision ---------------- -->
 
-    <!-- ---------------- start section portfolio ---------------- -->
-    <section class="portfolio wrapper">
-        <div class="portfolio__head">
-            <h4 class="portfolio__head-title title">
-                Portfolio
-            </h4>
-            <nav class="portfolio__nav nav">
-                <ul class="portfolio__nav-list nav__list">
-                    <li class="portfolio__nav-item nav__item">
-                        <a class="portfolio__nav-link link" href="#">
-                            all
-                        </a>
-                    </li>
-                    <li class="portfolio__nav-item nav__item">
-                        <a class="portfolio__nav-link link" href="#">
-                            branding
-                        </a>
-                    </li>
-                    <li class="portfolio__nav-item nav__item">
-                        <a class="portfolio__nav-link link" href="#">
-                            design
-                        </a>
-                    </li>
-                    <li class="portfolio__nav-item nav__item">
-                        <a class="portfolio__nav-link link" href="#">
-                            photography
-                        </a>
-                    </li>
-                    <li class="portfolio__nav-item nav__item">
-                        <a class="portfolio__nav-link link" href="#">
-                            illustration
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+<!-- ---------------- start section portfolio ---------------- -->
+<section class="portfolio" id="portfolio">
+    <div class="portfolio__head wrapper">
+        <h4 class="portfolio__head-title title">
+            Portfolio
+        </h4>
+        <nav class="portfolio__nav nav">
+            <ul class="portfolio__nav-list nav__list">
+                <li class="portfolio__nav-item nav__item">
+                    <a class="portfolio__nav-link link" href="javascript:void(0)">
+                        all
+                    </a>
+                </li>
+                <li class="portfolio__nav-item nav__item">
+                    <a class="portfolio__nav-link link" href="javascript:void(0)">
+                        branding
+                    </a>
+                </li>
+                <li class="portfolio__nav-item nav__item">
+                    <a class="portfolio__nav-link link" href="javascript:void(0)">
+                        design
+                    </a>
+                </li>
+                <li class="portfolio__nav-item nav__item">
+                    <a class="portfolio__nav-link link" href="javascript:void(0)">
+                        photography
+                    </a>
+                </li>
+                <li class="portfolio__nav-item nav__item">
+                    <a class="portfolio__nav-link link" href="javascript:void(0)">
+                        illustration
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="portfolio__gallery">
+        <a class="hand" href="javascript:void(0)">
+            <img src="img/gallery/hand.jpeg" alt="hand">
+        </a>
+        <a class="glasses" href="javascript:void(0)">
+            <img src="img/gallery/glasses.jpeg" alt="hand">
+        </a>
+        <a class="project" href="javascript:void(0)">
+            <img src="img/gallery/clothes.jpg" alt="hand">
+        </a>
+        <a class="shoes" href="javascript:void(0)">
+            <img src="img/gallery/shoes.jpeg" alt="hand">
+        </a>
+        <a class="palm" href="javascript:void(0)">
+            <img src="img/gallery/palm.jpeg" alt="hand">
+        </a>
+        <a class="cups" href="javascript:void(0)">
+            <img src="img/gallery/cups.jpeg" alt="hand">
+        </a>
+        <a class="dog" href="javascript:void(0)">
+            <img src="img/gallery/dog.jpeg" alt="hand">
+        </a>
+        <a class="monitor" href="javascript:void(0)">
+            <img src="img/gallery/monitor.jpeg" alt="hand">
+        </a>
+        <a class="banana" href="javascript:void(0)">
+            <img src="img/gallery/banana.jpeg" alt="hand">
+        </a>
+    </div>
+
+    <div class="portfolio__more">
+        <div class="wrapper">
+            <a href="javascript:void(0)" class="nav portfolio__link">VIEW MORE PROJECTS</a>
         </div>
+    </div>
 
-        <table class="portfolio__gallery">
-            <tr class="portfolio__gallery-table">
-                <td>
-                    <ul class="table__list">
-                        <li class="table__item">
-                            <a class="table__item-link" href="#">
-                                <img class="table__item-img" src="img/gallery1.png" alt="hand">
-                                <!-- <p class="table__item-text">
-                                        show project
-                                    </p> -->
-                            </a>
-                        </li>
-                        <li class="table__item">
-                            <a class="table__item-link" href="#">
-                                <img src="img/gallery5.png" alt="glasses">
-                                <!-- <p class="table__item-text">
-                                    show project
-                                </p> -->
-                            </a>
-                        </li>
-                    </ul>
-                </td>
-                <td>
-                    <ul class="table__list">
-                        <li class="table__item">
-                            <a class="table__item-link" href="#">
-                                <img src="img/gallery_active.png" alt="show project">
-                                <!-- <p class="table__item-text">
-                                    show project
-                                </p> -->
-                            </a>
-                        </li>
-                        <li class="table__item">
-                            <a class="table__item-link" href="#">
-                                <img src="img/gallery6.png" alt="shoes">
-                                <!-- <p class="table__item-text">
-                                    show project
-                                </p> -->
-                            </a>
-                        </li>
-                        <li class="table__item">
-                            <a class="table__item-link" href="#">
-                                <img src="img/gallery9.png" alt="palm">
-                                <!-- <p class="table__item-text">
-                                    show project
-                                </p> -->
-                            </a>
-                        </li>
-                    </ul>
-                </td>
-                <td>
-                    <ul class="table__list">
-                        <li class="table__item">
-                            <a class="table__item-link" href="#">
-                                <img src="img/gallery3.png" alt="cups">
-                                <!-- <p class="table__item-text">
-                                    show project
-                                </p> -->
-                            </a>
-                        </li>
-                        <li class="table__item">
-                            <a class="table__item-link" href="#">
-                                <img src="img/gallery7.png" alt="dog">
-                                <!-- <p class="table__item-text">
-                                    show project
-                                </p> -->
-                            </a>
-                        </li>
-                    </ul>
-                </td>
-                <td>
-                    <ul class="table__list">
-                        <li class="table__item">
-                            <a class="table__item-link" href="#">
-                                <img src="img/gallery4.png" alt="monitor">
-                                <!-- <p class="table__item-text">
-                                    show project
-                                </p> -->
-                            </a>
-                        </li>
-                        <li class="table__item">
-                            <a class="table__item-link" href="#">
-                                <img src="img/gallery8.png" alt="banana">
-                                <!-- <p class="table__item-text">
-                                    show project
-                                </p> -->
-                            </a>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </section>
-    <!-- ---------------- end section portfolio ---------------- -->
+</section>
+<!-- ---------------- end section portfolio ---------------- -->
+
+<!-- ---------------- start section quote ---------------- -->
+<section class="quote wrapper">
+    <blockquote>
+        <p>«Неважно какую историю вы рассказываете, главное – сделайте своего покупателя героем»
+            <br>
+            <span>Крис Броган</span>
+        </p>
+    </blockquote>
+</section>
 
 
-
+<!-- ---------------- end section quote ---------------- -->
 
 
 
