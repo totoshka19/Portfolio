@@ -221,35 +221,75 @@
             <img src="img/gallery/hand.jpeg" alt="hand">
         </a>
         <a class="glasses" href="javascript:void(0)">
-            <img src="img/gallery/glasses.jpeg" alt="hand">
+            <img src="img/gallery/glasses.jpeg" alt="glasses">
         </a>
-        <a class="project" href="javascript:void(0)">
-            <img src="img/gallery/clothes.jpg" alt="hand">
+        <a class="clothes" href="javascript:void(0)">
+            <img src="img/gallery/clothes.jpg" alt="clothes">
         </a>
         <a class="shoes" href="javascript:void(0)">
-            <img src="img/gallery/shoes.jpeg" alt="hand">
+            <img src="img/gallery/shoes.jpeg" alt="shoes">
         </a>
         <a class="palm" href="javascript:void(0)">
-            <img src="img/gallery/palm.jpeg" alt="hand">
+            <img src="img/gallery/palm.jpeg" alt="palm">
         </a>
         <a class="cups" href="javascript:void(0)">
-            <img src="img/gallery/cups.jpeg" alt="hand">
+            <img src="img/gallery/cups.jpeg" alt="cups">
         </a>
         <a class="dog" href="javascript:void(0)">
-            <img src="img/gallery/dog.jpeg" alt="hand">
+            <img src="img/gallery/dog.jpeg" alt="dog">
         </a>
         <a class="monitor" href="javascript:void(0)">
-            <img src="img/gallery/monitor.jpeg" alt="hand">
+            <img src="img/gallery/monitor.jpeg" alt="monitor">
         </a>
         <a class="banana" href="javascript:void(0)">
-            <img src="img/gallery/banana.jpeg" alt="hand">
+            <img src="img/gallery/banana.jpeg" alt="banana">
         </a>
     </div>
 
     <div class="portfolio__more">
         <div class="wrapper">
-            <a href="javascript:void(0)" class="nav portfolio__link">VIEW MORE PROJECTS</a>
+            <a href="#box" onclick="openbox()" class="nav portfolio__link">View MORE PROJECTS</a>
         </div>
+
+        <div class="portfolio__gallery-more" id="box">
+            <a href="javascript:void(0)">
+                <img src="img/gallery-more/cakes.jpeg" alt="cakes">
+            </a>
+            <a href="javascript:void(0)">
+                <img src="img/gallery-more/camaro.jpg" alt="Camaro">
+            </a>
+            <a href="javascript:void(0)">
+                <img src="img/gallery-more/estonia.jpg" alt="Estonia">
+            </a>
+            <a href="javascript:void(0)">
+                <img src="img/gallery-more/football.jpg" alt="football">
+            </a>
+            <a href="javascript:void(0)">
+                <img src="img/gallery-more/makeup.jpeg" alt="makeup">
+            </a>
+            <a href="javascript:void(0)">
+                <img src="img/gallery-more/ny.jpg" alt="New York">
+            </a>
+            <a href="javascript:void(0)">
+                <img src="img/gallery-more/oslo.jpg" alt="Oslo">
+            </a>
+            <a href="javascript:void(0)">
+                <img src="img/gallery-more/skiing.jpg" alt="skiing">
+            </a>
+            <a href="javascript:void(0)">
+                <img src="img/gallery-more/vulkan.jpg" alt="vulkan">
+            </a>
+            <a href="javascript:void(0)">
+                <img src="img/gallery-more/waterfall.jpg" alt="waterfall">
+            </a>
+            <a href="javascript:void(0)">
+                <img src="img/gallery-more/whale.jpg" alt="whale">
+            </a>
+            <a href="javascript:void(0)">
+                <img src="img/gallery-more/сanyon.jpg" alt="сanyon">
+            </a>
+        </div>
+
     </div>
 
 </section>
@@ -264,8 +304,25 @@
 </section>
 <!-- ---------------- end section quote ---------------- -->
 
+<!-- ---------------- start section video ---------------- -->
+
+<section class="video">
+    <video class="video__item"
+           preload="metadata"
+           loop
+           controls
+           poster="./video/video-prev.jpeg">
+        <source src="./video/video.webm" type="video/webm">
+        <source src="./video/video.mp4" type="video/mp4">
+
+    </video>
+</section>
 
 
+<!-- ---------------- end section quote ---------------- -->
+
+
+<script src="./js/main.js"></script>
 
 </body>
 
