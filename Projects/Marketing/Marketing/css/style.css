@@ -33,9 +33,6 @@
  --ff-SF: 'SF Pro Display', sans-serif;
 
  /* ---------------------- color ---------------------- */
- /* --color-primary: #222222; */
- /* --color-secondary: #555555; */
- /* --color-black: #000000; */
  --color-yellow: #FCBB08;
  --color-white: #ffffff;
  --color-grey: #373A39;
@@ -43,16 +40,8 @@
  --color-light-grey: #777777;
  --color-black-grey-title: #242121;
 
-
-
- /* --btn-border: #ccc; */
-
  /* ---------------------- background ---------------------- */
- /* --bg-mint-cream: #F3FBF8; */
  --bg-grey-lt: #F6F8FA;
- /* --bg-white: #ffffff; */
- /* --bg-green-lt-op: #09a66d0d; */
- /* --bg-footer: #FCFEFD; */
 }
 
 /* ---------------- start common styles ---------------- */
@@ -109,12 +98,10 @@ body {
     height: 25px;
     color: var(--color-grey);
     text-transform: uppercase;
-
 }
 
 .link:hover {
     border-bottom: 2px solid var(--color-yellow);
-
 }
 
 /* ---------------- end common styles ---------------- */
@@ -170,7 +157,7 @@ body {
     justify-content: center;
     gap: 20px;
     height: calc(100vh - 84px);
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--ff-Montserrat);
 }
 
 .banner__title {
@@ -330,12 +317,9 @@ body {
 .portfolio__gallery {
     position: relative;
     display: grid;
-    justify-self: center;
-    align-self: center;
-    grid-template-columns: repeat(4, 25%);
-    /*grid-template-columns: repeat(auto-fill), minmax(343px, 1fr);*/
+    justify-content: center;
+    grid-template-columns: repeat(4, calc(25% - 18px));
     grid-template-rows: 288px 30px 46px 130px 106px 300px;
-    grid-auto-flow:dense;
     grid-gap: 23px;
     grid-template-areas:
     "hand project cups monitor"
@@ -344,18 +328,13 @@ body {
     "hand shoes dog banana"
     "glasses shoes dog banana"
     "glasses palm dog banana";
-    overflow-x: hidden;
     padding-bottom: 70px;
-    /*text-transform: uppercase;*/
-    /*margin: 0 auto;*/
-    /*width: 100%;*/
 }
 
 .portfolio__gallery a {
     display: block;
     position: relative;
     z-index: 1;
-
 }
 
 .portfolio__gallery a:hover::after {
@@ -373,7 +352,6 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    /*z-index: 3;*/
 }
 
 .portfolio__gallery img {
@@ -418,24 +396,6 @@ body {
     grid-area: banana;
 }
 
-/*.portfolio__gallery-table td:not(:last-child) {*/
-/*    padding-right: 20px;*/
-/*}*/
-
-/*.table__list {*/
-/*}*/
-
-/*.table__item {*/
-/*}*/
-
-/*.table__item:not(:last-child) {*/
-/*    padding-bottom: 20px;*/
-/*}*/
-
-/*.table__item-content {*/
-/*    position: relative;*/
-/*}*/
-
 .portfolio__more {
     background-color: var(--bg-grey-lt);
     text-align: center;
@@ -447,6 +407,39 @@ body {
 }
 
 /* ---------------- end section portfolio ---------------- */
+
+/* ---------------- start section quote ---------------- */
+
+.quote {
+    max-width: 650px;
+    padding: 130px 0 148px 0;
+    font-family: 'Merriweather', sans-serif;
+    font-style: italic;
+    line-height: 36px;
+    text-align: center;
+}
+
+.blockquote p:first-child {
+    font-size: 18px;
+    color: #242121;
+}
+
+.blockquote p:last-child {
+    color: #9E9E9E;
+    font-size: 14px;
+    padding-top: 50px;
+}
+
+/* ---------------- end section quote ---------------- */
+
+
+
+
+
+
+
+
+
 
 .none {
     display: none;
