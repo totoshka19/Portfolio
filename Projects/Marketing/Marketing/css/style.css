@@ -542,6 +542,34 @@ body {
 
 /* ---------------- end section facts ---------------- */
 
+/* ---------------- start section slider ---------------- */
+
+.slider {
+    background-color: var(--bg-grey-lt);
+
+}
+
+.slider__wrapper {
+
+}
+
+.slider__item {
+    max-width: 600px;
+    padding: 360px 0;
+}
+
+.slider__item-title {
+    font-family: var(--ff-SF);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
+    color: var(--color-black-grey-title);
+    padding-bottom: 10px;
+}
+
+/* ---------------- end section slider ---------------- */
+
+
 
 
 
