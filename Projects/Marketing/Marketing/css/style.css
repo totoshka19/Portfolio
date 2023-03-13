@@ -476,7 +476,6 @@ body {
     position: relative;
     height: 330px;
     width: 100%;
-    background-color: #00195b;
 }
 
 .video__overlay {
@@ -508,6 +507,41 @@ body {
 }
 
 /* ---------------- end section video ---------------- */
+
+/* ---------------- start section facts ---------------- */
+
+.facts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 165px 0;
+}
+
+.facts__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.facts__number {
+    font-family: var(--ff-Montserrat);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+    color: var(--color-black-grey-title);
+}
+
+.facts__text {
+    font-family: var(--ff-OpenSans);
+    line-height: 19px;
+    color: var(--color-black-grey);
+    padding-top: 10px;
+}
+
+/* ---------------- end section facts ---------------- */
+
 
 
 
