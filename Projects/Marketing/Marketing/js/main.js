@@ -9,6 +9,15 @@ function openbox() {
     }
 }
 
+// function openbox() {
+//     let display = document.getElementById('.portfolio__gallery-more').style.display;
+//     if(display === 'none') {
+//         document.getElementById('.portfolio__gallery-more').style.display = 'grid';
+//     } else  {
+//         document.getElementById('.portfolio__gallery-more').style.display = 'none';
+//     }
+// }
+
 /* Запуск и пауза видео */
 
 let videoBtn = document.querySelector('.js-video-btn');

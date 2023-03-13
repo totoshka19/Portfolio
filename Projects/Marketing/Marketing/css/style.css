@@ -340,7 +340,6 @@ body {
     grid-auto-flow: dense;
     grid-gap: 23px;
     background-color: var(--bg-grey-lt);
-    /*margin-top: 40px;*/
 }
 
 .portfolio__gallery a,
@@ -443,10 +442,6 @@ body {
 
 .portfolio__link:hover {
     border-bottom: 2px solid var(--color-yellow);
-}
-
-#box {
-    display: none;
 }
 
 /* ---------------- end section portfolio ---------------- */
