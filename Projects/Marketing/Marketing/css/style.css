@@ -332,26 +332,40 @@ body {
 }
 
 .portfolio__gallery-more {
+    position: relative;
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(343px, 1fr));
     grid-auto-rows: 288px;
     grid-auto-flow: dense;
     grid-gap: 23px;
-    /*grid-template-areas:*/
-    /*"hand clothes cups monitor"*/
-    /*"hand shoes cups monitor"*/
-    /*"hand shoes cups banana"*/
-    /*"hand shoes dog banana"*/
-    /*"glasses shoes dog banana"*/
-    /*"glasses palm dog banana";*/
-    /*padding-bottom: 70px;*/
+    background-color: var(--bg-grey-lt);
+    /*margin-top: 40px;*/
 }
 
 .portfolio__gallery a,
-.portfolio__gallery-more {
+.portfolio__gallery-more a {
     display: block;
     position: relative;
     z-index: 1;
+}
+
+.portfolio__gallery-more a:nth-child(3n) {
+    grid-column: span 2;
+}
+
+.portfolio__gallery-more a:nth-child(5n) {
+    grid-row: span 2;
+}
+
+.portfolio__gallery-more a:nth-child(7n) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.portfolio__gallery-more a:last-child {
+    grid-column: span 1;
+    grid-row: span 1;
 }
 
 .portfolio__gallery a:hover::after,
@@ -372,7 +386,8 @@ body {
     left: 0;
 }
 
-.portfolio__gallery img {
+.portfolio__gallery img,
+.portfolio__gallery-more img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -428,8 +443,6 @@ body {
 
 .portfolio__link:hover {
     border-bottom: 2px solid var(--color-yellow);
-
-
 }
 
 #box {
@@ -471,6 +484,24 @@ body {
     background-color: #00195b;
 }
 
+.video__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../video/play.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.video__overlay.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
 .video__item {
     object-fit: cover;
     position: absolute;
@@ -478,6 +509,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 
 /* ---------------- end section video ---------------- */
