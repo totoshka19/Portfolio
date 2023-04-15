@@ -373,6 +373,19 @@ body {
 
 /* ------------ end section contacts ------------ */
 
+/* ------------ start section news ------------ */
+
+.news {
+    padding-bottom: 150px;
+}
+
+.news__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+/* ------------ end section news ------------ */
 
 /* ------------ start footer ------------ */
 
