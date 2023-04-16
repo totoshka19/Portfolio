@@ -75,9 +75,9 @@ body {
     margin-left: 20px;
 }
 
-.menu__item:last-child a {
-    margin-right: 0;
-}
+/*.menu__item:last-child a {*/
+/*    margin-right: 0;*/
+/*}*/
 
 .active a {
     color: #010101;
@@ -127,6 +127,12 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto 206px;
+    transition: 0.5s;
+}
+
+.header__button:hover {
+    color: #FFFFFF;
+    background-color: #363636;
 }
 
 /*----- End header -----*/
