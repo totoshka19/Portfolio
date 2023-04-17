@@ -185,7 +185,7 @@ body {
 /*----- Start team -----*/
 
 .team {
-    height: 745px;
+    min-height: 745px;
 }
 
 .block__head {
@@ -217,6 +217,7 @@ body {
     flex-wrap: wrap;
     gap: 40px;
     padding-top: 127px;
+    padding-bottom: 130px;
 }
 
 .team__item {
@@ -256,6 +257,69 @@ body {
 }
 
 /*----- End team -----*/
+
+/*----- Start provide -----*/
+
+.provide {
+    background-color: #282828;
+    padding-bottom: 155px;
+}
+
+.inverse .block__title {
+    padding-top: 176px;
+    color: #ffffff;
+}
+
+.inverse .block__text {
+    color: #777777;
+}
+
+.provide__inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-top: 138px;
+}
+
+.provide__item {
+    max-width: 335px;
+    text-align: center;
+}
+
+.provide__item i {
+    color: #FFFFFF;
+    font-size: 63px;
+    width: 172px;
+    height: 172px;
+    border: 5px solid #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 43px;
+}
+
+.provide__item-title {
+    font-family: "HelveticaNeueProLt", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 31px;
+}
+
+.provide__item-text {
+    font-family: "HelveticaNeueProLt", sans-serif;
+    /*font-size: 18px;*/
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #777777;
+}
+
+/*----- End provide -----*/
+
+
 
 
 
