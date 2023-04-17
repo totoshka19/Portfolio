@@ -2,37 +2,37 @@
 
 @font-face {
     font-family: "HelveticaNeueLTProLt";
-    src: url(../fonts/HelveticaNeueLTProLt.otf) format("otf");
+    src: url(../fonts/HelveticaNeueLTProLt.otf) format("opentype");
 }
 
 @font-face {
     font-family: "HelveticaNeueLTProMd";
-    src: url(../fonts/HelveticaNeueLTProMd.otf) format("otf");
+    src: url(../fonts/HelveticaNeueLTProMd.otf) format("opentype");
 }
 
 @font-face {
     font-family: "HelveticaNeueLTProRoman";
-    src: url(../fonts/HelveticaNeueLTProRoman.otf) format("otf");
+    src: url(../fonts/HelveticaNeueLTProRoman.otf) format("opentype");
 }
 
 @font-face {
     font-family: "Merriweather-LightItalic";
-    src: url(../fonts/Merriweather-LightItalic.ttf) format("ttf");
+    src: url(../fonts/Merriweather-LightItalic.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-Light";
-    src: url(../fonts/Montserrat-Light.ttf) format("ttf");
+    src: url(../fonts/Montserrat-Light.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-Regular";
-    src: url(../fonts/Montserrat-Regular.ttf) format("ttf");
+    src: url(../fonts/Montserrat-Regular.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Roboto-Regular";
-    src: url(../fonts/Roboto-Regular.ttf) format("ttf");
+    src: url(../fonts/Roboto-Regular.ttf) format("truetype");
 }
 
 /*----- Обнуление стилей -----*/
@@ -74,10 +74,6 @@ body {
     margin-right: 20px;
     margin-left: 20px;
 }
-
-/*.menu__item:last-child a {*/
-/*    margin-right: 0;*/
-/*}*/
 
 .active a {
     color: #010101;
@@ -136,3 +132,11 @@ body {
 }
 
 /*----- End header -----*/
+
+/*----- Start about -----*/
+
+
+
+/*----- End about -----*/
+
+
