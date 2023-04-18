@@ -54,6 +54,10 @@ body {
     padding: 0 15px;
 }
 
+.navbar-brand {
+    display: none;
+}
+
 .menu {
     display: flex;
     justify-content: center;
@@ -94,7 +98,7 @@ body {
     font-weight: 400;
     letter-spacing: 0.02em;
     color: #1d1e1f;
-    margin: 207px auto 4px;
+    margin: 207px auto 6px;
 }
 
 .header__text {

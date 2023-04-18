@@ -1,0 +1,41 @@
+@media (max-width: 769px) {
+    .navbar-brand {
+        display: block;
+    }
+    .header__title {
+        margin: 80px auto 20px;
+    }
+    .header__button {
+        margin: 0 auto 80px;
+    }
+    .about {
+        height: 100%;
+        padding-top: 80px;
+        padding-bottom: 200px;
+    }
+    .about__inner {
+        gap: 50px;
+    }
+    .block__title {
+        padding-top: 80px;
+    }
+    .team__inner {
+        padding-top: 80px;
+        padding-bottom: 90px;
+    }
+    .provide {
+        padding-bottom: 80px;
+    }
+    .inverse .block__title {
+        padding-top: 80px;
+    }
+    .provide__inner {
+        padding-top: 80px;
+    }
+    .contact__form {
+        padding-top: 80px;
+    }
+    .footer {
+        padding-top: 80px;
+    }
+}
