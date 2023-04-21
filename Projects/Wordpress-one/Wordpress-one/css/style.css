@@ -80,7 +80,7 @@ body {
 }
 
 .active a {
-    color: #010101;
+    color: #010101 !important;
 }
 
 .logo {
