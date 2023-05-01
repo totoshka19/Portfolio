@@ -361,6 +361,28 @@ main {
     width: 0;
     transition: 2s;
 }
+/*---------- Responsive View ----------*/
+@media only screen and (max-width: 800px) {
+    #about .about-row {
+        flex-direction: column;
+        gap: 80px;
+    }
+    #about .about-row .img-col {
+        width: 50%;
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    #about .about-row .img-col {
+        width: 80%;
+        margin-top: 30px;
+        text-align: center;
+    }
+    #about .about-row .img-col::before {
+        bottom: -20px;
+        left: -20px;
+    }
+}
 /*---------- About Section End ----------*/
 
 
