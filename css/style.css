@@ -265,6 +265,106 @@ main {
 }
 /*---------- Home Section End ----------*/
 
+/*---------- About Section Start ----------*/
+.sub-title {
+    color: var(--mainColor);
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    padding-left: 70px;
+    margin-bottom: 20px;
+}
+.sub-title::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 40%;
+    width: 65px;
+    height: 1px;
+    background-color: var(--mainColor);
+}
+.title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+    text-transform: capitalize;
+}
+.sub-para {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+#about .about-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+#about .about-row .img-col {
+    flex-basis: 40%;
+    position: relative;
+}
+#about .about-row .img-col::before {
+    position: absolute;
+    content: "";
+    bottom: -40px;
+    left: -50px;
+    width: 100%;
+    height: 95%;
+    background-color: #9b51e044;
+    border-radius: 10px;
+    z-index: -1;
+}
+#about .about-row .img-col img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: -10px 10px 50px rgba(0, 0, 0, 0.2);
+}
+#about .about-row .info-col {
+    flex-basis: 55%;
+}
+#about .about-row .info-col .skills {
+    margin-top: 45px;
+    width: 100%;
+}
+#about .about-row .info-col .skills .skill-box {
+    margin-bottom: 30px;
+}
+#about .about-row .info-col .skills .skill-box .skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+#about .about-row .info-col .skills .skill-box .skill-info h4 {
+    color: var(--headingColor);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+#about .about-row .info-col .skills .skill-box .skill-info .outer-bar{
+    width: 100%;
+    height: 7px;
+    background-color: var(--boxBgColor);
+    border-radius: 5px;
+}
+#about .about-row .info-col .skills .skill-box .skill-info .outer-bar .inner-bar{
+    background-color: var(--mainColor);
+    height: 7px;
+    border-radius: 5px;
+    width: 0;
+    transition: 2s;
+}
+
+/*---------- About Section End ----------*/
+
+
 /*---------- Main Section End ----------*/
 
 /*================================================================================*/
