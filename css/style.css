@@ -348,20 +348,19 @@ main {
     letter-spacing: 0.7px;
     text-transform: uppercase;
 }
-#about .about-row .info-col .skills .skill-box .skill-info .outer-bar{
+#about .about-row .info-col .skills .skill-box .outer-bar{
     width: 100%;
     height: 7px;
     background-color: var(--boxBgColor);
     border-radius: 5px;
 }
-#about .about-row .info-col .skills .skill-box .skill-info .outer-bar .inner-bar{
+#about .about-row .info-col .skills .skill-box .outer-bar .inner-bar{
     background-color: var(--mainColor);
     height: 7px;
     border-radius: 5px;
     width: 0;
     transition: 2s;
 }
-
 /*---------- About Section End ----------*/
 
 
