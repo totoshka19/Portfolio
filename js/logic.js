@@ -8,3 +8,14 @@ menuBtn.addEventListener("click", ()=> {
 // ---------- Header Toggle End ---------- //
 
 // ================================================================================ //
+
+// ---------- Typing Animation Start ---------- //
+let type = new Typed(".typingAnimation", {
+    strings: ["Front-end Developer", "Web developer", "site layout"],
+    typeSpeed: 100,
+    backSpeed: 50,
+    backDelay: 2000,
+    loop: true,
+});
+// ---------- Typing Animation End ---------- //
+
