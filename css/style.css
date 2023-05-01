@@ -180,5 +180,97 @@ header .social-icon a:hover {
 }
 /*---------- Header End ----------*/
 
+/*================================================================================*/
+
+/*---------- Main Section Start ----------*/
+main {
+    margin-left: 330px;
+    transition: 0.3s;
+}
+@media only screen and (max-width: 1100px) {
+    main {
+        margin-left: 0;
+    }
+}
+/*---------- Home Section Start ----------*/
+#home {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("../img/portfolio/hero-bg-blur.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+#home::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 7, 26, 0.9);
+    z-index: -1;
+}
+#home .home-row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+#home .home-row h1 {
+    font-size: 75px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+#home .home-row p {
+    color: whitesmoke;
+    font-size: 45px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+#home .home-row .buttons {
+    margin-top: 20px;
+}
+#home .home-row .buttons a {
+    font-size: 18px;
+    border: 3px solid var(--mainColor);
+}
+#home .home-row i {
+    color: white;
+    font-size: 40px;
+}
+/*---------- Responsive View ----------*/
+@media only screen and (max-width: 700px) {
+    #home {
+        height: auto;
+    }
+    #home .home-row h1 {
+        font-size: 60px;
+    }
+    #home .home-row p {
+        font-size: 35px;
+        height: 80px;
+    }
+    #home .home-row .buttons {
+        margin-top: 0;
+    }
+}
+/*---------- Home Section End ----------*/
+
+/*---------- Main Section End ----------*/
+
+/*================================================================================*/
+
+
+
+
 
 
