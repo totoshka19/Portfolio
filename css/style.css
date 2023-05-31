@@ -150,8 +150,8 @@ header .social-icon a:hover {
 }
 /*---------- Responsive Menu Button ----------*/
 #menuBtn {
-   z-index: 1000;
-    position: absolute;
+    z-index: 1000;
+    position: fixed;
     right: 40px;
     top: 40px;
     color: white;
