@@ -26,7 +26,7 @@ echo "<br>";
 echo $msg;
 echo "<br>";
 
-$filename = "messages.txt";
+$filename = "/var/www/html/messages.txt";
 $content = $name . "/n" . $email . "/n" . $msg . "/n". "------------------------------------------------" . "/n";
 
 file_put_contents($filename, $content);
