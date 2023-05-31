@@ -25,6 +25,7 @@ echo $email;
 echo "<br>";
 echo $msg;
 
+
 if (mail("totoshechka19@gmail.com", "Письмо с моего сайта", "Сообщение:".$msg,"From: $email \r\n"))
 {
     echo "сообщение успешно отправлено";
