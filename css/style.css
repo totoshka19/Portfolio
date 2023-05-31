@@ -386,12 +386,12 @@ main {
 /*---------- About Section End ----------*/
 
 /*---------- Experience Section Start ----------*/
-.exp .exp-row {
+#exp .exp-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
 }
-.exp .exp-row .exp-box {
+#exp .exp-row .exp-box {
  background-color: var(--boxBgColor);
     border-radius: 10px;
     padding: 35px 30px;
@@ -399,7 +399,7 @@ main {
     flex-direction: column;
     gap: 20px;
 }
-.exp .exp-row .exp-box i {
+#exp .exp-row .exp-box i {
     width: 45px;
     height: 45px;
     background-color: var(--mainColor);
@@ -411,7 +411,7 @@ main {
     margin-bottom: 7px;
     position: relative;
 }
-.exp .exp-row .exp-box i:after {
+#exp .exp-row .exp-box i:after {
     content: '';
     position: absolute;
     right: -80px;
@@ -420,7 +420,7 @@ main {
     height: 1px;
     background-color: var(--mainColor);
 }
-.exp .exp-row .exp-box h2 {
+#exp .exp-row .exp-box h2 {
     font-size: 22px;
     font-weight: 400;
     letter-spacing: 0.5px;
@@ -429,25 +429,61 @@ main {
 }
 /*---------- Responsive View ----------*/
 @media only screen and (max-width: 1350px) {
-    .exp .exp-row .exp-box h2 {
+    #exp .exp-row .exp-box h2 {
         margin-right: 0;
     }
 }
 @media only screen and (max-width: 630px) {
-    .exp .exp-row {
+    #exp .exp-row {
         grid-template-columns: 1fr;
     }
-    .exp .exp-row .exp-box h2 {
+    #exp .exp-row .exp-box h2 {
         margin-right: 50px;
     }
 }
 @media only screen and (max-width: 470px) {
-    .exp .exp-row .exp-box h2 {
+    #exp .exp-row .exp-box h2 {
         margin-right: 0;
     }
 }
-
 /*---------- Experience Section End ----------*/
+
+/*---------- Portfolio Section Start ----------*/
+#portfolio .port-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 70px;
+}
+#portfolio .port-row .img {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.18);
+}
+#portfolio .port-row .img a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+#portfolio .port-row .img a img {
+    width: 100%;
+    height: 100%;
+}
+#portfolio .port-row .img a:hover {
+    transform: scale(1.09);
+}
+
+/*---------- Responsive View ----------*/
+@media only screen and (max-width: 650px) {
+    #portfolio .port-row {
+        grid-template-columns: 1fr;
+        margin: 0 20px;
+    }
+}
+/*---------- Portfolio Section End ----------*/
+
 
 
 
