@@ -1,0 +1,5 @@
+include:
+  - project: 'devops/ci-common'
+    ref: main
+    file:
+      - '/gitlab-pipe/template-docker-frontend-public.yml'
