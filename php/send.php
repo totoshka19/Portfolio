@@ -27,8 +27,11 @@ echo $msg;
 echo "<br>";
 
 $filename = "/var/www/html/messages.txt";
-$content = $name . "/n" . $email . "/n" . $msg . "/n". "------------------------------------------------" . "/n";
 
-$fp = fopen($filename,"wb");
+$content = $name . "<br>" . $email . "<br>" . $msg . "<br>". "------------------------------------------------" . "<br>";
+$content = mb_convert_encoding($content, 'UTF-8', 'OLD-ENCODING');
+
+$fp = fopen($filename,"a");
 fwrite($fp,$content);
 fclose($fp);
+
