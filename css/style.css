@@ -8,6 +8,7 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 /*---------- Global Variables ----------*/
@@ -63,8 +64,6 @@ h1, h2, h3 {
     padding: 120px 5%;
 }
 /*---------- Global Classes End ----------*/
-
-/*================================================================================*/
 
 /*---------- Header Start ----------*/
 header {
@@ -179,8 +178,6 @@ header .social-icon a:hover {
     left: 0;
 }
 /*---------- Header End ----------*/
-
-/*================================================================================*/
 
 /*---------- Main Section Start ----------*/
 main {
