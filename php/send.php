@@ -24,11 +24,9 @@ echo "<br>";
 echo $email;
 echo "<br>";
 echo $msg;
+echo "<br>";
 
+$filename = "messages.txt";
+$content = $name . "/n" . $email . "/n" . $msg . "/n". "------------------------------------------------" . "/n";
 
-if (mail("totoshechka19@gmail.com", "Письмо с моего сайта", "Сообщение:".$msg,"From: $email \r\n"))
-{
-    echo "сообщение успешно отправлено";
-} else {
-    echo "при отправке сообщения возникли ошибки";
-}
+file_put_contents($filename, $content);
