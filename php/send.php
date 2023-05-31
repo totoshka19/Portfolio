@@ -29,4 +29,6 @@ echo "<br>";
 $filename = "/var/www/html/messages.txt";
 $content = $name . "/n" . $email . "/n" . $msg . "/n". "------------------------------------------------" . "/n";
 
-file_put_contents($filename, $content);
+$fp = fopen($filename,"wb");
+fwrite($fp,$content);
+fclose($fp);
