@@ -31,4 +31,11 @@ window.addEventListener("scroll", function () {
 });
 // ---------- Skill Bar Animation End ---------- //
 
+// ---------- Display the current year ---------- //
+let year = document.getElementById('year');
+function getYear() {
+    year.innerHTML = new Date().getFullYear();
+}
+getYear();
+
 
