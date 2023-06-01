@@ -385,6 +385,29 @@ body {
     gap: 40px;
 }
 
+.news__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.news__item-img {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.news__item-title {
+    flex-basis: 446px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.news__item-link {
+    color: white;
+    background-color: #0066FF;
+    padding: 4px 20px;
+}
+
 /* ------------ end section news ------------ */
 
 /* ------------ start footer ------------ */
