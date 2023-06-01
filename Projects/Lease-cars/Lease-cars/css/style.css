@@ -383,6 +383,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+    margin-bottom: 70px;
 }
 
 .news__item {
@@ -407,6 +408,17 @@ body {
     background-color: #0066FF;
     padding: 4px 20px;
 }
+
+.news__link {
+    text-transform: uppercase;
+    background-color: #151515;
+    padding: 13px 16px;
+    color: #fff;
+    width: 225px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+ }
 
 /* ------------ end section news ------------ */
 
