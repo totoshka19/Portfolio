@@ -69,6 +69,10 @@ body {
     font-weight: 700;
 }
 
+.menu__list-link--active {
+    color: #0066FF;
+}
+
 /* ------------ end header ------------ */
 
 .main {
@@ -383,9 +387,128 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+    margin-bottom: 70px;
+}
+
+.news__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.news__item-img {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.news__item-title {
+    flex-basis: 446px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.news__item-link {
+    color: white;
+    background-color: #0066FF;
+    padding: 4px 20px;
+}
+
+.showmore__link {
+    text-transform: uppercase;
+    background-color: #151515;
+    padding: 13px 16px;
+    color: #fff;
+    width: 225px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+ }
+
+.showmore__link:hover {
+    background-color: #0066FF;
 }
 
 /* ------------ end section news ------------ */
+
+/* ------------ start choose-cars section ------------ */
+
+.choose {
+    padding: 100px 0 150px;
+}
+
+.tabs {
+    margin-bottom: 70px;
+}
+
+.tabs__btn {
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 100px;
+}
+
+.tabs__btn-item {
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.tabs__btn-item--active {
+    color: #0066FF;
+}
+
+.tabs__content-item {
+    display: none;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px 40px;
+}
+
+.tabs__content-item.tabs__content-item--active {
+    display: grid;
+}
+
+.card {
+    text-align: center;
+}
+
+.card__content {
+    padding: 0 5px;
+    border: 1px solid #0066FF;
+    border-top: 0;
+}
+
+.card__title {
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card__text {
+    margin-bottom: 20px;
+}
+
+.card__price {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.card__link {
+    display: block;
+    color: #0066FF;
+    border: 1px solid #0066FF;
+    border-top: 0;
+    padding: 2px 0;
+}
+
+.card__link:hover {
+    color: #FFF;
+    background-color: #0066FF;
+}
+
+/* ------------ end choose-cars section ------------ */
 
 /* ------------ start footer ------------ */
 
