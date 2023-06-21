@@ -1,10 +1,10 @@
 import {getCurrentDateTime} from "./utils.js";
 
-export const renderWidgetToday = (widget) => {
+export const renderWidgetToday = (widget, data) => {
     const {dayOfMonth, month, year, hours, minutes, dayOfWeek} = getCurrentDateTime();
+    console.log(data);
 
     const currentDateTime = getCurrentDateTime();
-    console.log(currentDateTime);
 
     widget.insertAdjacentHTML(
         'beforeend',
@@ -16,23 +16,23 @@ export const renderWidgetToday = (widget) => {
                 <p class="widget__day">${dayOfWeek}</p>
               </div>
               <div class="widget__icon">
-                <img class="widget__img" src="./icon/01d.svg" alt="Погода">
+                <img class="widget__img" src="./icon/${data.weather[0].icon}.svg" alt="Погода">
               </div>
               <div class="widget__weather">
                 <div class="widget__city">
-                  <p>Калининград</p>
+                  <p>${data.name}</p>
                   <button class="widget__change-city" aria-label="Изменить город"></button>
                 </div>
-                <p class="widget__temp-big">19.3°C</p>
+                <p class="widget__temp-big">${(data.main.temp - 273.15).toFixed(1)} °C</p>
                 <p class="widget__felt">ощущается</p>
-                <p class="widget__temp-small">18.8 °C</p>
+                <p class="widget__temp-small">${(data.main.feels_like - 273.15).toFixed(1)} °C</p>
               </div>
             </div>
         `
     )
 }
 
-export const renderWidgetOther = (widget) => {
+export const renderWidgetOther = (widget, data) => {
 
     widget.insertAdjacentHTML(
         'beforeend',
@@ -40,7 +40,7 @@ export const renderWidgetOther = (widget) => {
              <div class="widget__other">
               <div class="widget__wind">
                 <p class="widget__wind-title">Ветер</p>
-                <p class="widget__wind-speed">3.94 м/с</p>
+                <p class="widget__wind-speed">${data.wind.speed.toFixed(2)} м/с</p>
                 <p class="widget__wind-text">&#8599;</p>
               </div>
               <div class="widget__humidity">
@@ -93,5 +93,9 @@ export const renderWidgetForecast = (widget) => {
             </ul>
        `
     )
+}
 
+export const showError = (widget, error) => {
+    widget.textContent = error.toString();
+    widget.classList.add('widget_error');
 }
