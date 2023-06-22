@@ -43,6 +43,11 @@ body {
   margin-top: -30px;
 }
 
+.sidebar p {
+  padding: 0 80px;
+  text-align: justify;
+}
+
 .main-slide {
   height: 100%;
   position: absolute;
