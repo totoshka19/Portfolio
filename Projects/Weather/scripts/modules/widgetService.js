@@ -4,27 +4,37 @@ import {
     renderWidgetToday, showError
 } from "./render.js";
 
-import {fetchForecast, fetchWeather} from "./APIservice.js";
+import {fetchForecast, fetchWeather, getCity} from "./APIservice.js";
 
-export const startWidget = async () => {
-    const city = 'Москва';
+export const startWidget = async (city, widget) => {
 
-    const widget = document.createElement('div');
-    widget.classList.add('widget');
+    if (!city) {
+        const dataCity = await getCity();
+        if (dataCity.success) {
+            city = dataCity.city;
+        } else {
+            showError(widget, dataCity.error);
+        }
+    }
+
+    if (!widget) {
+        widget = document.createElement('div');
+        widget.classList.add('widget');
+    }
 
     const dataWeather =await fetchWeather(city);
     if (dataWeather.success) {
         renderWidgetToday(widget, dataWeather.data);
         renderWidgetOther(widget, dataWeather.data);
     } else {
-        showError(dataWeather.error);
+        showError(widget, dataWeather.error);
     }
 
     const dataForecast =await fetchForecast(city);
     if (dataForecast.success) {
         renderWidgetForecast(widget, dataForecast.data);
     } else {
-        showError(dataForecast.error);
+        showError(widget, dataForecast.error);
     }
 
     return widget;
