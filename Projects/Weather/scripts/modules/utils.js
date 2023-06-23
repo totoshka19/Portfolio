@@ -75,14 +75,14 @@ export const convertPressure = (pressure) => {
 }
 
 export const getWeatherForecastData = (data) => {
-    const forecast = data.list.filter((item) => {
-        return new Date(item.dt_txt).getHours() === 12 &&
-            new Date(item.dt_txt).getDate() > new Date().getDate();
-    });
+    const forecast = data.list.filter(
+        (item) =>
+            new Date(item.dt_txt).getHours() === 12 &&
+            new Date(item.dt_txt).getDate() >= new Date().getDate(),
+    );
 
     const forecastData = forecast.map((item) => {
         const date = new Date(item.dt_txt);
-
         const weekdaysShort = [
             'вс',
             'пн',
@@ -99,14 +99,16 @@ export const getWeatherForecastData = (data) => {
         let minTemp = Infinity;
         let maxTemp = -Infinity;
 
-        for (let i = 0; i < date.list.length; i++) {
+        for (let i = 0; i < data.list.length; i++) {
             const temp = data.list[i].main.temp;
             const tempDate = new Date(data.list[i].dt_txt);
 
-            if (tempDate.getDate() === date.getDate() && temp < minTemp) {
-                minTemp = temp;
-            } else if (tempDate.getDate() === date.getDate() && temp > maxTemp) {
-                maxTemp = temp;
+            if (tempDate.getDate() === date.getDate()) {
+                if (temp < minTemp) {
+                    minTemp = temp;
+                } else {
+                    maxTemp = temp;
+                }
             }
         }
 

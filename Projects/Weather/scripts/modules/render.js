@@ -63,7 +63,6 @@ export const renderWidgetOther = (widget, data) => {
             </div>
         `
     )
-
 }
 
 export const renderWidgetForecast = (widget, data) => {
