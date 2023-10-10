@@ -569,6 +569,62 @@ body {
 
 /* ---------------- end section slider ---------------- */
 
+/* ---------------- start section team ---------------- */
+.team {
+    padding: 120px 0;
+
+}
+
+.team__title {
+    margin-bottom: 100px;
+
+}
+
+.team__cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team__card {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+.team__card:hover {
+    filter: none;
+}
+
+.team__card-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 35px;
+}
+
+.team__card-title {
+    font-family: var(--ff-Montserrat);
+    color: var(--color-black-grey);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.team__card-description {
+    font-family: var(--ff-OpenSans);
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--color-grey);
+}
+
+
+/* ---------------- end section team ---------------- */
+
+
+
 
 
 
